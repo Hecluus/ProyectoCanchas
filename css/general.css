@@ -6,3 +6,77 @@
 body {
     font-family: 'Urbanist', sans-serif;
 }
+
+header {
+    display: grid;
+    place-items: center;
+    min-height: 10vw;
+    background-color: #112d18;
+}
+
+
+.nav-links {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+.nav-contenedor {
+    display: grid;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    height: 13vh;
+    width: 90vw;
+}
+
+#nav {
+    display: grid;
+    place-items: center;
+    margin: 0 50px;
+    padding: 10px;
+}
+
+#stlinks {
+    padding: 15px;
+    border-radius: 10px;
+    width: 50vw;
+}
+
+#nav img {
+    border-radius: 10px;
+}
+
+#nav a {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#stlinks:hover>a {
+    opacity: 0.3;
+}
+
+#stlinks>a:hover {
+    opacity: 1 !important;
+    transform: scale(1.1);
+}
+
+.btn-login {
+    width: 10vw;
+    background-color: #adb5bd;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #212529;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+.btn-login:hover {
+    background-color: #ced4da;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #212529;
+}
+
+#iniciar a {
+    margin: 5px;
+    font-size: 0.9rem;
+}

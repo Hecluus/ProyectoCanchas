@@ -1,0 +1,145 @@
+main {
+    display: grid;
+    min-height: 80vh;
+}
+
+.subti {
+    display: grid;
+    place-items: center;
+}
+
+.subti h2 {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 18vw;
+    height: 5vw;
+    padding: 3px;
+    border-radius: 20px;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 3vw;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+.bot {
+    background-color: rgb(255 188 13);
+    border-color: rgb(192 139 0);
+    color: black;
+    margin-bottom: 1vw;
+    font-weight: 600;
+}
+
+.bot:hover {
+    background-color: rgb(255 202 64);
+    border-color: rgb(192 139 0);
+    color: black;
+}
+
+.comida,
+.bebida {
+    display: grid;
+    justify-content: center;
+    background-color: #2E7D32;
+    padding: 2vw;
+}
+
+.image img {
+    height: 150px;
+}
+
+.list-group-item {
+    display: none;
+    width: 60vw;
+    height: 15vw;
+}
+
+.item2 img {
+    height: 100px;
+}
+
+.item2 .image {
+    display: grid;
+    place-items: center;
+}
+
+#btnradio1:checked~.btn-group~.list-group .item1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+#btnradio2:checked~.btn-group~.list-group .item2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+#btnradio3:checked~.btn-group~.list-group .item3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+#btnradi1:checked~.btn-group~.list-group .item1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+#btnradi2:checked~.btn-group~.list-group .item2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+#btnradi3:checked~.btn-group~.list-group .item3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-control {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-control input {
+    display: none;
+}
+
+.list-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.list-text h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.cjprecio {
+    display: grid;
+    justify-content: end;
+    text-align: end;
+}
+
+.boton {
+    font-size: 0.7rem;
+}
+
+.precio {
+    font-weight: 600;
+}

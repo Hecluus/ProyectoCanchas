@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/Menu.css">
+    <title>Menú</title>
+</head>
+
+<body>
+    <header>
+        <section class="nav-contenedor">
+            <nav id="nav" class="d-flex justify-content-between">
+                <img src="../Assets/img/logo.png" height="50px" alt="logo" id="logo">
+                <div id="stlinks" class="d-flex justify-content-between">
+                    <a href="../index.html" class="nav-links">Inicio</a>
+                    <a href="#" class="nav-links">Registro-F5</a>
+                    <a href="../Pages/MenuPage.html" class="nav-links">Comida</a>
+                    <a href="./404Page.html" class="nav-links">Contacto</a>
+                    <a href="./404Page.html" class="nav-links">Sobre Nosotros</a>
+                </div>
+                <div id="iniciar">
+                    <a href="../Pages/404Page.html" class="btn btn-primary btn-login">Iniciar Sección</a>
+                    <a href="../Pages/404Page.html" class="btn btn-primary btn-login">Registrar</a>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="comida">
+            <div class="subti">
+                <h2>Menú</h2>
+            </div>
+            <div class="menu-control">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+
+
+                <div class="btn-group" role="group">
+                    <label class="btn btn-outline-primary bot" for="btnradio1">Hamburguesas</label>
+                    <label class="btn btn-outline-primary bot" for="btnradio2">Pizzas</label>
+                    <label class="btn btn-outline-primary bot" for="btnradio3">Hot Dog</label>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <!-- Seccion de Hamburgesas -->
+                    <!-- Hamburgesa 1 -->
+                    <li class="list-group-item item1">
+                        <div class="image">
+                            <img src="https://api-middleware-mcd.mcdonaldscupones.com/media/image/product$kqXB9EyQ/200/200/original?country=ar" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Cheeseburger Clásica</h2>
+                            <p>Carne vacuna, queso cheddar fundido, pickles, ketchup y mostaza en pan suave.</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$8.50</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="Hamburguesa clasica">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Hamburgesa 2 -->
+                    <li class="list-group-item item1">
+                        <div class="image">
+                            <img src="https://api-middleware-mcd.mcdonaldscupones.com/media/image/product$kqX3hBwW/200/200/original?country=ar" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Hamburgesa clasica</h2>
+                            <p>Carne de res, lechuga, tomate y cebolla</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$8.50</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="Hamburguesa clasica">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Hamburgesa 3 -->
+                    <li class="list-group-item item1">
+                        <div class="image">
+                            <img src="https://api-middleware-mcd.mcdonaldscupones.com/media/image/product$kqXt7Sq2/200/200/original?country=ar" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Hamburgesa clasica</h2>
+                            <p>Carne de res, lechuga, tomate y cebolla</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$8.50</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="Hamburguesa clasica">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Seccion de pizzas -->
+                    <!-- Pizza 1 -->
+                    <li class="list-group-item item2">
+                        <div class="image">
+                            <img src="../Assets/img/pizza de pepperoni.png" alt="pepperoni">
+                        </div>
+                        <div class="list-text">
+                            <h2>Pepperoni</h2>
+                            <p>Clásica y sabrosa. Salsa de tomate, abundante queso mozzarella fundido y rodajas de
+                                pepperoní doradas al horno. Un toque de rúcula fresca para equilibrar.</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$12.00</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="pepperoni">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Pizza 2 -->
+                    <li class="list-group-item item2">
+                        <div class="image">
+                            <img src="../Assets/img/pizza de champiñones con albahaca.png"
+                                alt="pizza de champiñones con albahaca">
+                        </div>
+                        <div class="list-text">
+                            <h2>Champiñones con albahaca</h2>
+                            <p>Una opción suave, aromática y deliciosa. Base con salsa de tomate, queso mozzarella
+                                derretido, champiñones frescos laminados y un toque final de hojas de albahaca para un
+                                aroma único.</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$12.00</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="pepperoni">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Pizza 3 -->
+                    <li class="list-group-item item2">
+                        <div class="image">
+                            <img src="../Assets/img/muzzarella clásica.png" alt="muzzarella clásica">
+                        </div>
+                        <div class="list-text">
+                            <h2>Muzzarella clásica</h2>
+                            <p>La favorita de siempre. Base de salsa de tomate, cubierta con abundante queso muzzarella
+                                fundido y decorada con hojas frescas de albahaca que le aportan aroma y frescura.</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$12.00</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="pepperoni">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Seccion de sandwich -->
+                    <!-- Sandwich 1 -->
+                    <li class="list-group-item">
+                        <div class="image">
+                            <img src="../Assets/img/Sandwich de pavo.jpg" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Sándwich de Pavo</h2>
+                            <p>Pavo, aguacate, lechuga y mayonesa</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$9.00</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="sandwich de pavo">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Sandwich 2 -->
+                    <li class="list-group-item">
+                        <div class="image">
+                            <img src="../Assets/img/Sandwich de pavo.jpg" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Sándwich de Pavo</h2>
+                            <p>Pavo, aguacate, lechuga y mayonesa</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$9.00</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="sandwich de pavo">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Sandwich 3 -->
+                    <li class="list-group-item">
+                        <div class="image">
+                            <img src="../Assets/img/Sandwich de pavo.jpg" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Sándwich de Pavo</h2>
+                            <p>Pavo, aguacate, lechuga y mayonesa</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$9.00</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="sandwich de pavo">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Seccion de HotDog -->
+                    <li class="list-group-item item3">
+                        <div class="image">
+                            <img src="../Assets/img/Ensalda.png" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Ensalada César</h2>
+                            <p>Lechuga romana, pollo, aderezo César</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$7.25</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="ensalada cesar">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+        </section>
+        <section class="bebida">
+            <div class="subti">
+                <h2>Bebidas</h2>
+            </div>
+            <div class="menu-control">
+                <input type="radio" id="btnradi1" name="btnradi" checked>
+                <input type="radio" id="btnradi2" name="btnradi">
+                <input type="radio" id="btnradi3" name="btnradi">
+
+                <div class="btn-group" role="group">
+                    <label class="btn btn-outline-primary bot" for="btnradi1">Hamburguesas</label>
+                    <label class="btn btn-outline-primary bot" for="btnradi2">Pizzas</label>
+                    <label class="btn btn-outline-primary bot" for="btnradi3">Hot Dog</label>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <!-- Seccion de Hamburgesas -->
+                    <!-- Hamburgesa 1 -->
+                    <li class="list-group-item item1">
+                        <div class="image">
+                            <img src="../Assets/img/Hamurgesa2.jpg" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Hamburgesa clasica</h2>
+                            <p>Carne de res, lechuga, tomate y cebolla</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$8.50</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="Hamburguesa clasica">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Hamburgesa 2 -->
+                    <li class="list-group-item item1">
+                        <div class="image">
+                            <img src="../Assets/img/Hamurgesa2.jpg" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Hamburgesa clasica</h2>
+                            <p>Carne de res, lechuga, tomate y cebolla</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$8.50</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="Hamburguesa clasica">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Hamburgesa 3 -->
+                    <li class="list-group-item item1">
+                        <div class="image">
+                            <img src="../Assets/img/Hamurgesa2.jpg" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Hamburgesa clasica</h2>
+                            <p>Carne de res, lechuga, tomate y cebolla</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$8.50</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="Hamburguesa clasica">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Seccion de pizzas -->
+                    <!-- Pizza 1 -->
+                    <li class="list-group-item item2">
+                        <div class="image">
+                            <img src="../Assets/img/Pepperoni.png" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Pepperoni</h2>
+                            <p>Clásica y sabrosa. Salsa de tomate, abundante queso mozzarella fundido y rodajas de
+                                pepperoní doradas al horno. Un toque de rúcula fresca para equilibrar.</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$12.00</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="pepperoni">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Pizza 2 -->
+                    <li class="list-group-item item2">
+                        <div class="image">
+                            <img src="../Assets/img/2.png" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Pepperoni</h2>
+                            <p>Pepperoní y queso mozzarella</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$12.00</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="pepperoni">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Pizza 3 -->
+                    <li class="list-group-item item2">
+                        <div class="image">
+                            <img src="../Assets/img/3.png" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Pepperoni</h2>
+                            <p>Pepperoní y queso mozzarella</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$12.00</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="pepperoni">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Seccion de sandwich -->
+                    <!-- Sandwich 1 -->
+                    <li class="list-group-item">
+                        <div class="image">
+                            <img src="../Assets/img/Sandwich de pavo.jpg" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Sándwich de Pavo</h2>
+                            <p>Pavo, aguacate, lechuga y mayonesa</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$9.00</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="sandwich de pavo">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Sandwich 2 -->
+                    <li class="list-group-item">
+                        <div class="image">
+                            <img src="../Assets/img/Sandwich de pavo.jpg" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Sándwich de Pavo</h2>
+                            <p>Pavo, aguacate, lechuga y mayonesa</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$9.00</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="sandwich de pavo">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Sandwich 3 -->
+                    <li class="list-group-item">
+                        <div class="image">
+                            <img src="../Assets/img/Sandwich de pavo.jpg" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Sándwich de Pavo</h2>
+                            <p>Pavo, aguacate, lechuga y mayonesa</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$9.00</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="sandwich de pavo">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- Seccion de HotDog -->
+                    <li class="list-group-item item3">
+                        <div class="image">
+                            <img src="../Assets/img/Ensalda.png" alt="">
+                        </div>
+                        <div class="list-text">
+                            <h2>Ensalada César</h2>
+                            <p>Lechuga romana, pollo, aderezo César</p>
+                        </div>
+                        <div class="cjprecio">
+                            <p class="precio">$7.25</p>
+                            <form action="/agregar-carrito" method="POST">
+                                <input type="hidden" name="producto" value="ensalada cesar">
+                                <button type="submit" class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
