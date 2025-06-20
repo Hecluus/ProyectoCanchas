@@ -5,6 +5,7 @@
     --main-clr2: #222222;
     --main-clr3: #1DCD9F;
     --main-clr4: #169976;
+    --main-clr5: #2E7D32;
 }
 
 body {
@@ -15,7 +16,11 @@ header {
     display: grid;
     place-items: center;
     min-height: 10vw;
-    background-color: #112d18;
+    background-color: var(--main-clr1);
+}
+
+main {
+    background-color: var(--main-clr5);
 }
 
 
@@ -28,7 +33,7 @@ header {
 .nav-contenedor {
     display: grid;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: var(--main-clr2);
     border-radius: 10px;
     height: 13vh;
     width: 90vw;

@@ -46,18 +46,24 @@ main {
     padding: 2vw;
 }
 
+.ulsty {
+    padding: 0;
+    border-radius: 20px;
+    border-style: none;
+}
+
 .image img {
-    height: 150px;
+    height: 140px;
 }
 
 .list-group-item {
     display: none;
     width: 60vw;
-    height: 15vw;
+    height: 17vw;
 }
 
 .item2 img {
-    height: 100px;
+    height: 90px;
 }
 
 .item2 .image {
@@ -138,8 +144,20 @@ main {
 
 .boton {
     font-size: 0.7rem;
+    height: 3vw;
 }
 
 .precio {
+    font-weight: 600;
+}
+.fixed-bottom{
+    display: grid;
+    place-items: end;
+}
+.btn-fixed{
+    margin: 10px 10px;
+    background-color:chocolate ;
+}
+.modal-header h1{
     font-weight: 600;
 }
