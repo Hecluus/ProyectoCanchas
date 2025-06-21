@@ -14,21 +14,24 @@
 <body>
     <header>
         <!-- NavBar -->
-        <nav id="nav" class="d-flex">
-            <img src="./Assets/img/logo.png" alt="logo" id="logo" height="50px" class="mx-4">
-            <div id="stlinks" class="d-flex justify-content-between mx-3">
-                <a href="#" class="nav-links">Inicio</a>
-                <a href="./Pages/reservaf5.html" class="nav-links">Reserva-F5</a>
-                <a href="./Pages/MenuPage.html" class="nav-links">Comida</a>
-                <a href="./Pages/404Page.html" class="nav-links">Contacto</a>
-                <a href="./Pages/404Page.html" class="nav-links">Sobre Nosotros</a>
+        <nav id="nav" class="navbar navbar-expand-md navbar-dark">
+            <div class="container d-flex align-items-center justify-content-between">
+                <div id="stlinks" class="collapse navbar-collapse flex-wrap gap-3">
+                    <img src="./Assets/img/logo.png" alt="logo" id="logo" class="img-fluid me-3"
+                        style="max-height: 50px;">
+                    <a href="#" class="nav-link text-white">Inicio</a>
+                    <a href="./Pages/reservaf5.html" class="nav-link text-white">Reserva-F5</a>
+                    <a href="./Pages/MenuPage.html" class="nav-link text-white">Comida</a>
+                    <a href="./Pages/404Page.html" class="nav-link text-white">Contacto</a>
+                    <a href="./Pages/404Page.html" class="nav-link text-white">Sobre Nosotros</a>
+                </div>
             </div>
         </nav>
         <!-- Titulo y botones -->
-        <section class="header-contenido d-flex flex-column justify-content-center align-items-center m-5">
+        <section class="header-contenido d-flex flex-column justify-content-center align-items-center m-4">
             <h1 class="text-light">Golazo Gourmet</h1>
-            <p class="text-light">Bienvenidos al mejor lugar para comer y jugar un F5</p>
-            <div class="d-flex flex-flow-grow">
+            <p class="text-light">Reservá tu cancha, jugá con amigos y disfrutá de platos únicos después del partido</p>
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
                 <a href="./Pages/404Page.html"><button class="btn-login mx-1">INICIAR SESION</button></a>
                 <a href="./Pages/404Page.html"><button class="btn-login mx-1">REGISTRAR</button></a>
             </div>
