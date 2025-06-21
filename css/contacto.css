@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+.Contenedorbtns{
+     background-color: rgb(8, 39, 23);
+    display: flex;
+    width: 100%;
+    height: 400px;
+   
+    
+  
+   
+    
+   
+
+
+}
+.mb-1{
+    background-color: rgb(84, 233, 99);
+    width: 45%;
+    height: 35%;
+    margin-left: 2%;
+    margin-top: 2%;
+    border: solid;
+    box-shadow: 5px 5px 20px 10px rgba(135, 132, 132, 0.2);
+    
+}
+.mb-2{
+    background-color: rgb(84, 233, 99);
+    width: 45%;
+    height: 27%;
+    margin-top: 10.5%;
+    margin-left: -45%;
+    border: solid;
+    box-shadow: 5px 5px 20px 10px rgba(135, 132, 132, 0.2);
+    
+}
+
+.contenedor{
+    display: flex;
+
+    background-color: rgb(18, 87, 40);
+    height: 50%;
+    border: solid;
+    
+}
+.caja1{
+    display: flex;
+    background-color:var(--main-clr5);
+    width: 100%;
+    height: 450px;
+    opacity: 100%;
+    border: solid;
+}
+.titulocontacto{
+    
+    margin-top: 5%;
+    height: 10%;
+    margin-left: 5%;
+}
+.parrafocontacto{
+    
+    margin-top: 10%;
+    height: 10%;
+    margin-left: -13%;
+}
+.lista{
+    
+    margin-top: 12%;
+    height: 25%;
+    margin-left: -14.5%;
+}
+.logo1{
+    
+    margin-left: 15%;
+    height: 20%;
+    margin-top: 5%;
+    width: 5%;
+
+}
+.numerotelefono{
+    font-size: larger;
+    height: 10%;
+    margin-top: 15%;
+    margin-left: -6%;
+
+
+}
+.logo2{
+
+   
+    height: 19%;
+    margin-top: 5%;
+    margin-left: 21%;
+    width: 5%;
+
+}
+
+.email{
+    font-size: larger;
+    height: 10%;
+    margin-top: 15% ;
+    margin-left: -9%;
+}
+.logo3{
+
+    
+    height: 18%;
+    margin-top: 5%;
+    width: 5%;
+    margin-left: 18%;
+}
+.ubicacion{
+
+    font-size: larger;
+    height: 15%;
+    margin-top: 15%;
+    margin-left: -12%;
+
+}
+.mapa{
+    border-radius: 100px;
+    margin-top: 2%;
+margin-left: 18%;  
+width: 300px;
+height: 250px;
+}
+.mapa:hover{
+    width: 320px;
+    height: 280px;
+}
+.ubicacionmapa{
+    color: azure;
+    height: 12%;
+    font-size: larger;
+    margin-top: 20%;
+    margin-left: -18%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+    
+
+
+
+   
+
+
+
+
+
+
+
+
+   
+
+
