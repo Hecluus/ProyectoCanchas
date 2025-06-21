@@ -1,18 +1,97 @@
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Assets/img/bgheader.jpg);
-    height: 60vh;
+    display: block;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Assets/img/bgheader.jpg);
+    min-height: 65vh;
     background-position: center;
     background-size: cover;
-    place-items: none;
-    display: block;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+.nav-contenedor {
+    display: grid;
+    place-items: center;
+    background-color: var(--main-clr2);
+    border-radius: 10px;
+    height: 13vh;
+    width: 90vw;
+}
+
+.header-contenido {
+    width: 90%;
+    gap: 15px;
+}
+
+.header-contenido h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-shadow: var(--main-clr2) 10px 5px 10px;
+}
+
+#nav {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin: 0 50px;
+    padding: 10px;
+}
+
+#stlinks {
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+#nav img {
+    border-radius: 10px;
+}
+
+#nav a {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#stlinks:hover>a {
+    opacity: 0.3;
+}
+
+#stlinks>a:hover {
+    opacity: 1 !important;
+    transform: scale(1.1);
+}
+
+.btn-login {
+    width: 10vw;
+    background-color: #adb5bd;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #212529;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+.btn-login:hover {
+    background-color: #ced4da;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #212529;
+}
+
+#iniciar a {
+    margin: 5px;
+    font-size: 0.9rem;
 }
 
 .btn-login {
     background-color: #7fffd4;
     border: none;
     border-radius: 10px;
-    width: 250px;
-    height: 30px;
+    padding: 8px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
 }
 
 .btn-login:hover {
@@ -26,11 +105,21 @@ main {
 
 .F5 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
     justify-content: center;
-    padding: 0 15vw;
+    place-items: center;
+    padding: 0 10vw;
     text-align: center;
+}
+
+.food {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background-color: #e6c200;
+    gap: 50px;
+    padding: 5vw 5vw;
+    place-items: center;
 }
 
 .card {
@@ -69,13 +158,6 @@ main {
     padding: 50px;
 }
 
-.food {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: #e6c200;
-    padding: 10vh;
-    gap: 30px;
-}
 
 #menu {
     display: flex;
@@ -98,4 +180,65 @@ main {
 .h2s2 {
     text-align: center;
     font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .F5 {
+        padding: 0 5vw;
+    }
+
+    .nav-contenedor {
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 95vw;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .btn-login {
+        width: 100%;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    #stlinks {
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #stlinks>a {
+        font-size: 1.2rem;
+    }
+
+    #nav {
+        margin: 0;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-contenido {
+        text-align: center;
+        padding: 0 0 10vw;
+    }
+
+    .nav-links {
+        font-size: 1rem;
+    }
+
+    .btn-login {
+        font-size: 0.9rem;
+    }
+
+    header {
+        min-height: 15vh;
+    }
+
+    .header-contenido {
+        text-align: center;
+        padding: 0 0 10vw;
+    }
 }
