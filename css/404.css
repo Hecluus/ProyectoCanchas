@@ -1,10 +1,16 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 48.9vw;
-    padding: 50px;
-    background-color: var(--main-clr1);
+    height: 100vh;
+    background-color: #000000;
+    padding: 0;
 }
 
 section {
@@ -23,9 +29,10 @@ h1 {
     font-size: 3rem;
     padding: 20px;
     font-weight: 900;
-    text-shadow: black 5px 5px 10px;
+    text-shadow: 0 0 10px black;
 }
-.boton a{
+
+.boton a {
     font-size: 1.3rem;
     font-weight: 400;
 }
