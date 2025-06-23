@@ -2,23 +2,14 @@
 <html lang="en">
 
 <head>
-    <!-- ==========================
-         Metadatos y Recursos
-    ========================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina de contacto</title>
-
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-
-    <!-- Iconos Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="../css/general.css">
-    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Iniciar Sesión</title>
 </head>
 
 <body>
@@ -33,52 +24,52 @@
                     <a href="../index.html" class="nav-links">Inicio</a>
                     <a href="./reservaf5.html" class="nav-links">Reserva-F5</a>
                     <a href="./MenuPage.html" class="nav-links">Comida</a>
-                    <a href="#" class="nav-links">Contacto</a>
+                    <a href="./contactopage.html" class="nav-links">Contacto</a>
                     <a href="./sobrenosotrospage.html" class="nav-links">Sobre Nosotros</a>
                 </div>
                 <div id="iniciar">
-                    <a href="./login.html" class="btn btn-primary btn-login">Iniciar Sesión</a>
-                    <a href="../Pages/404Page.html" class="btn btn-primary btn-login">Registrar</a>
+                    <a href="#" class="btn btn-primary btn-login">Iniciar Sesión</a>
+                    <a href="./404Page.html" class="btn btn-primary btn-login">Registrar</a>
                 </div>
             </nav>
         </section>
     </header>
-
-    <!-- ==========================
-         Contenido Principal
-    ========================== -->
     <main>
         <section class="caja-principal">
-            <h1>Estamos para ayudarte</h1>
-            <div class="contenedorbtns">
-                <article class="caja caja1">
-                    <!-- Formulario de contacto -->
-                    <div class="mb-1">
-                        <label for="exampleFormControlInput1" class="form-label">Email </label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com">
+            <form>
+                <div class="label-texto">
+                    <div class="row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Correo Electronico</label>
+                        <div class="col-sm-10 caja">
+                            <input type="email" class="form-control" id="inputEmail3">
+                        </div>
                     </div>
-                    <div class="mb-2">
-                        <label for="exampleFormControlTextarea1" class="form-label2">Consulta</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        <button type="button" class="btn btn-primary boton">Enviar</button>
+                    <div class="row">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
+                        <div class="col-sm-10 caja">
+                            <input type="password" class="form-control" id="inputPassword3">
+                        </div>
                     </div>
-                </article>
-                <article class="caja caja2">
-                    <!-- Mapa de ubicación -->
-                    <h2 class="mapa-h2"><i class="bi bi-geo-alt"></i>San Miguel de Tucuman -Argentina</h2>
-                    <div class="caja-mapa">
-                        <iframe class="mapa"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.0536597605933!2d-65.2647294248388!3d-26.806419988770546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d21e9df306f%3A0x11cb676224291c1f!2sAv.%20Juan%20Domingo%20Per%C3%B3n%20125%2C%20T4000%20Yerba%20Buena%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1750460196587!5m2!1ses!2sar"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <div class="row btn-radio">
+                        <div class="col-sm-10 offset-sm-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                                    Recordar
+                                </label>
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                </article>
-            </section>
-        </main>
-        
-        <!-- ==========================
+                </div>
+                <div class="boton">
+                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- ==========================
         Pie de Página / Footer
     ========================== -->
     <footer class="bg-dark text-white py-4">
@@ -122,10 +113,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- ==========================
-         Scripts Bootstrap
-    ========================== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>

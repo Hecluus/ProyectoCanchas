@@ -25,7 +25,7 @@
                     <a href="./sobrenosotrospage.html" class="nav-links">Sobre Nosotros</a>
                 </div>
                 <div id="iniciar">
-                    <a href="../Pages/404Page.html" class="btn btn-primary btn-login">Iniciar Sesión</a>
+                    <a href="./login.html" class="btn btn-primary btn-login">Iniciar Sesión</a>
                     <a href="../Pages/404Page.html" class="btn btn-primary btn-login">Registrar</a>
                 </div>
             </nav>
@@ -187,18 +187,64 @@
                     </ul>
                     <!-- Seccion de HotDog -->
                     <ul class="ulsty">
+                        <!-- Hot Dog 1 -->
                         <li class="list-group-item item3">
                             <div class="image">
-                                <img src="../Assets/img/Ensalda.png" alt="">
+                                <img src="../Assets/img/Clasico.png" alt="Hot Dog Clásico">
                             </div>
                             <div class="list-text">
-                                <h2>Ensalada César</h2>
-                                <p>Lechuga romana, pollo, aderezo César</p>
+                                <h2>Hot Dog Clásico</h2>
+                                <p>Pan suave con salchicha, mostaza y ketchup. El clásico de siempre, simple y
+                                    delicioso.</p>
                             </div>
                             <div class="cjprecio">
-                                <p class="precio">$7.25</p>
+                                <p class="precio">$6.50</p>
                                 <!-- <form action="/agregar-carrito" method="POST"> -->
-                                <input type="hidden" name="producto" value="ensalada cesar">
+                                <input type="hidden" name="producto" value="Hot Dog Clásico">
+                                <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                    class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Hot Dog 2 -->
+                        <li class="list-group-item item3">
+                            <div class="image">
+                                <img src="../Assets/img/Con queso.png" alt="Hot Dog con Queso">
+                            </div>
+                            <div class="list-text">
+                                <h2>Hot Dog con Queso</h2>
+                                <p>Salchicha parrillera, pan tostado y baño de queso cheddar derretido, acompañado de
+                                    papas pay.</p>
+                            </div>
+                            <div class="cjprecio">
+                                <p class="precio">$7.50</p>
+                                <!-- <form action="/agregar-carrito" method="POST"> -->
+                                <input type="hidden" name="producto" value="Hot Dog con Queso">
+                                <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                    class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Hot Dog 3 -->
+                        <li class="list-group-item item3">
+                            <div class="image">
+                                <img src="../Assets/img/Mexicano.png" alt="Hot Dog Mexicano">
+                            </div>
+                            <div class="list-text">
+                                <h2>Hot Dog Mexicano</h2>
+                                <p>Con guacamole, jalapeños, cebolla crujiente y un toque de salsa picante sobre
+                                    salchicha grillada.</p>
+                            </div>
+                            <div class="cjprecio">
+                                <p class="precio">$7.75</p>
+                                <!-- <form action="/agregar-carrito" method="POST"> -->
+                                <input type="hidden" name="producto" value="Hot Dog Mexicano">
                                 <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                                     class="btn btn-success boton">
                                     <i class="bi bi-cart2"></i> Agregar
@@ -207,6 +253,7 @@
                             </div>
                         </li>
                     </ul>
+
                 </ul>
             </div>
         </section>
@@ -220,163 +267,188 @@
                 <input type="radio" id="btnradi3" name="btnradi">
 
                 <div class="btn-group" role="group">
-                    <label class="btn btn-outline-primary bot" for="btnradi1">Hamburguesas</label>
-                    <label class="btn btn-outline-primary bot" for="btnradi2">Pizzas</label>
-                    <label class="btn btn-outline-primary bot" for="btnradi3">Hot Dog</label>
+                    <label class="btn btn-outline-primary bot" for="btnradi1">Jugos</label>
+                    <label class="btn btn-outline-primary bot" for="btnradi2">Refrescos</label>
+                    <label class="btn btn-outline-primary bot" for="btnradi3">Café</label>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <!-- Seccion de Hamburgesas -->
-                    <!-- Hamburgesa 1 -->
-                    <ul class="ulsty">
-                        <li class="list-group-item item1">
-                            <div class="image">
-                                <img src="../Assets/img/Hamurgesa2.jpg" alt="">
-                            </div>
-                            <div class="list-text">
-                                <h2>Hamburgesa clasica</h2>
-                                <p>Carne de res, lechuga, tomate y cebolla</p>
-                            </div>
-                            <div class="cjprecio">
-                                <p class="precio">$8.50</p>
-                                <!-- <form action="/agregar-carrito" method="POST"> -->
-                                <input type="hidden" name="producto" value="ensalada cesar">
-                                <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                                    class="btn btn-success boton">
-                                    <i class="bi bi-cart2"></i> Agregar
-                                </button>
-                                </form>
-                            </div>
-                        </li>
-                        <!-- Hamburgesa 2 -->
-                        <li class="list-group-item item1">
-                            <div class="image">
-                                <img src="../Assets/img/Hamurgesa2.jpg" alt="">
-                            </div>
-                            <div class="list-text">
-                                <h2>Hamburgesa clasica</h2>
-                                <p>Carne de res, lechuga, tomate y cebolla</p>
-                            </div>
-                            <div class="cjprecio">
-                                <p class="precio">$8.50</p>
-                                <!-- <form action="/agregar-carrito" method="POST"> -->
-                                <input type="hidden" name="producto" value="ensalada cesar">
-                                <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                                    class="btn btn-success boton">
-                                    <i class="bi bi-cart2"></i> Agregar
-                                </button>
-                                </form>
-                            </div>
-                        </li>
-                        <!-- Hamburgesa 3 -->
-                        <li class="list-group-item item1">
-                            <div class="image">
-                                <img src="../Assets/img/Hamurgesa2.jpg" alt="">
-                            </div>
-                            <div class="list-text">
-                                <h2>Hamburgesa clasica</h2>
-                                <p>Carne de res, lechuga, tomate y cebolla</p>
-                            </div>
-                            <div class="cjprecio">
-                                <p class="precio">$8.50</p>
-                                <!-- <form action="/agregar-carrito" method="POST"> -->
-                                <input type="hidden" name="producto" value="ensalada cesar">
-                                <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                                    class="btn btn-success boton">
-                                    <i class="bi bi-cart2"></i> Agregar
-                                </button>
-                                </form>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- Seccion de pizzas -->
-                    <!-- Pizza 1 -->
-                    <ul class="ulsty">
 
-                        <li class="list-group-item item2">
+                <ul class="list-group list-group-flush">
+                    <!-- Sección Jugos -->
+                    <ul class="ulsty">
+                        <!-- Jugo 1 -->
+                        <li class="list-group-item item1">
                             <div class="image">
-                                <img src="../Assets/img/Pepperoni.png" alt="">
+                                <img src="../Assets/img/JugoNaranja.jpg" alt="Jugo de naranja">
                             </div>
                             <div class="list-text">
-                                <h2>Pepperoni</h2>
-                                <p>Clásica y sabrosa. Salsa de tomate, abundante queso mozzarella fundido y rodajas de
-                                    pepperoní doradas al horno. Un toque de rúcula fresca para equilibrar.</p>
+                                <h2>Jugo de Naranja</h2>
+                                <p>Jugo natural exprimido de naranjas frescas</p>
                             </div>
                             <div class="cjprecio">
-                                <p class="precio">$12.00</p>
-                                <!-- <form action="/agregar-carrito" method="POST"> -->
-                                <input type="hidden" name="producto" value="ensalada cesar">
+                                <p class="precio">$4.00</p>
+                                <input type="hidden" name="producto" value="Jugo de Naranja">
                                 <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                                     class="btn btn-success boton">
                                     <i class="bi bi-cart2"></i> Agregar
                                 </button>
-                                </form>
                             </div>
                         </li>
-                        <!-- Pizza 2 -->
-                        <li class="list-group-item item2">
+                        <!-- Jugo 2 -->
+                        <li class="list-group-item item1">
                             <div class="image">
-                                <img src="../Assets/img/2.png" alt="">
+                                <img src="../Assets/img/JugoManzana.jpg" alt="Jugo de manzana">
                             </div>
                             <div class="list-text">
-                                <h2>Pepperoni</h2>
-                                <p>Pepperoní y queso mozzarella</p>
+                                <h2>Jugo de Manzana</h2>
+                                <p>Delicioso jugo de manzana natural</p>
                             </div>
                             <div class="cjprecio">
-                                <p class="precio">$12.00</p>
-                                <!-- <form action="/agregar-carrito" method="POST"> -->
-                                <input type="hidden" name="producto" value="ensalada cesar">
+                                <p class="precio">$4.00</p>
+                                <input type="hidden" name="producto" value="Jugo de Manzana">
                                 <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                                     class="btn btn-success boton">
                                     <i class="bi bi-cart2"></i> Agregar
                                 </button>
-                                </form>
                             </div>
                         </li>
-                        <!-- Pizza 3 -->
-                        <li class="list-group-item item2">
+                        <!-- Jugo 3 -->
+                        <li class="list-group-item item1">
                             <div class="image">
-                                <img src="../Assets/img/3.png" alt="">
+                                <img src="../Assets/img/JugoDurazno.jpg" alt="Jugo de durazno">
                             </div>
                             <div class="list-text">
-                                <h2>Pepperoni</h2>
-                                <p>Pepperoní y queso mozzarella</p>
+                                <h2>Jugo de Durazno</h2>
+                                <p>Refrescante jugo de durazno natural</p>
                             </div>
                             <div class="cjprecio">
-                                <p class="precio">$12.00</p>
-                                <!-- <form action="/agregar-carrito" method="POST"> -->
-                                <input type="hidden" name="producto" value="ensalada cesar">
+                                <p class="precio">$4.50</p>
+                                <input type="hidden" name="producto" value="Jugo de Durazno">
                                 <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                                     class="btn btn-success boton">
                                     <i class="bi bi-cart2"></i> Agregar
                                 </button>
-                                </form>
                             </div>
                         </li>
                     </ul>
+
+                    <!-- Sección Refrescos -->
                     <ul class="ulsty">
-                        <!-- Seccion de HotDog -->
+                        <!-- Refresco 1 -->
+                        <li class="list-group-item item2">
+                            <div class="image">
+                                <img src="../Assets/img/RefrescoCola.jpg" alt="Refresco de cola">
+                            </div>
+                            <div class="list-text">
+                                <h2>Refresco de Cola</h2>
+                                <p>Bebida gaseosa con sabor clásico de cola</p>
+                            </div>
+                            <div class="cjprecio">
+                                <p class="precio">$3.00</p>
+                                <input type="hidden" name="producto" value="Refresco de Cola">
+                                <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                    class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </div>
+                        </li>
+                        <!-- Refresco 2 -->
+                        <li class="list-group-item item2">
+                            <div class="image">
+                                <img src="../Assets/img/RefrescoNaranja.jpg" alt="Refresco de naranja">
+                            </div>
+                            <div class="list-text">
+                                <h2>Refresco de Naranja</h2>
+                                <p>Bebida gaseosa sabor naranja, refrescante y dulce</p>
+                            </div>
+                            <div class="cjprecio">
+                                <p class="precio">$3.00</p>
+                                <input type="hidden" name="producto" value="Refresco de Naranja">
+                                <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                    class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </div>
+                        </li>
+                        <!-- Refresco 3 -->
+                        <li class="list-group-item item2">
+                            <div class="image">
+                                <img src="../Assets/img/RefrescoLimón.jpg" alt="Refresco de limón">
+                            </div>
+                            <div class="list-text">
+                                <h2>Refresco de Limón</h2>
+                                <p>Bebida gaseosa sabor limón con un toque ácido</p>
+                            </div>
+                            <div class="cjprecio">
+                                <p class="precio">$3.00</p>
+                                <input type="hidden" name="producto" value="Refresco de Limón">
+                                <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                    class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Sección Café -->
+                    <ul class="ulsty">
+                        <!-- Café 1 -->
                         <li class="list-group-item item3">
                             <div class="image">
-                                <img src="../Assets/img/Ensalda.png" alt="">
+                                <img src="../Assets/img/CafeAmericano.jpg" alt="Café Americano">
                             </div>
                             <div class="list-text">
-                                <h2>Ensalada César</h2>
-                                <p>Lechuga romana, pollo, aderezo César</p>
+                                <h2>Café Americano</h2>
+                                <p>Café negro preparado con agua caliente</p>
                             </div>
                             <div class="cjprecio">
-                                <p class="precio">$7.25</p>
-                                <!-- <form action="/agregar-carrito" method="POST"> -->
-                                <input type="hidden" name="producto" value="ensalada cesar">
+                                <p class="precio">$2.50</p>
+                                <input type="hidden" name="producto" value="Café Americano">
                                 <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                                     class="btn btn-success boton">
                                     <i class="bi bi-cart2"></i> Agregar
                                 </button>
-                                </form>
+                            </div>
+                        </li>
+                        <!-- Café 2 -->
+                        <li class="list-group-item item3">
+                            <div class="image">
+                                <img src="../Assets/img/CafeLatte.jpg" alt="Café Latte">
+                            </div>
+                            <div class="list-text">
+                                <h2>Café Latte</h2>
+                                <p>Café espresso con leche vaporizada</p>
+                            </div>
+                            <div class="cjprecio">
+                                <p class="precio">$3.00</p>
+                                <input type="hidden" name="producto" value="Café Latte">
+                                <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                    class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
+                            </div>
+                        </li>
+                        <!-- Café 3 -->
+                        <li class="list-group-item item3">
+                            <div class="image">
+                                <img src="../Assets/img/CafeEspresso.jpg" alt="Café Espresso">
+                            </div>
+                            <div class="list-text">
+                                <h2>Café Espresso</h2>
+                                <p>Café fuerte y concentrado preparado al momento</p>
+                            </div>
+                            <div class="cjprecio">
+                                <p class="precio">$2.75</p>
+                                <input type="hidden" name="producto" value="Café Espresso">
+                                <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                    class="btn btn-success boton">
+                                    <i class="bi bi-cart2"></i> Agregar
+                                </button>
                             </div>
                         </li>
                     </ul>
                 </ul>
         </section>
+
         <section>
             <section class="fixed-bottom">
                 <!-- Button trigger modal -->
