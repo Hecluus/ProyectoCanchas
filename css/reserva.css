@@ -1,19 +1,32 @@
+/* ==========================
+   Reset global
+========================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-main{
+
+/* ==========================
+   Main container
+========================== */
+main {
     min-height: 100vw;
     padding: 3vw;
 }
 
+/* ==========================
+   Títulos h2 dentro de main
+========================== */
 main h2 {
     padding: 1vw;
     color: white;
     font-weight: 600;
 }
 
+/* ==========================
+   Canchas contenedores
+========================== */
 .cancha1,
 .cancha2,
 .cancha3 {
@@ -25,12 +38,18 @@ main h2 {
     border-radius: 25px;
 }
 
+/* ==========================
+   Item grid para horas
+========================== */
 .grid-item-hora {
     background-color: #fff;
     border: 1px solid #000;
     padding: 20px;
 }
 
+/* ==========================
+   Item grid general
+========================== */
 .grid-item {
     background-color: #4f4;
     border: 1px solid #000;
@@ -38,6 +57,9 @@ main h2 {
     cursor: pointer;
 }
 
+/* ==========================
+   Indicadores de estado
+========================== */
 .reservado {
     width: 17px;
     height: 17px;
@@ -56,6 +78,9 @@ main h2 {
     margin-right: 10px;
 }
 
+/* ==========================
+   Contenedor confirmación turno
+========================== */
 #confirmacion-turno {
     background-color: #D2D0A0;
     width: 600px;
@@ -63,6 +88,9 @@ main h2 {
     border-radius: 20px;
 }
 
+/* ==========================
+   Elementos cancha y fecha/hora
+========================== */
 .cancha-n,
 .fecha-hora {
     width: 150px;
@@ -70,6 +98,9 @@ main h2 {
     background-color: #fff;
 }
 
+/* ==========================
+   Métodos de pago (tarjeta, efectivo)
+========================== */
 .tarjeta,
 .efectivo {
     background-color: #fff;
@@ -78,6 +109,9 @@ main h2 {
     cursor: pointer;
 }
 
+/* ==========================
+   Botón confirmar turno
+========================== */
 #btn-confirmar {
     padding: 10px 20px;
     display: block;

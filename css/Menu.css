@@ -1,8 +1,14 @@
+/* ==========================
+   Main container
+========================== */
 main {
     display: grid;
     min-height: 80vh;
 }
 
+/* ==========================
+   Subtítulo y estilo del h2 dentro
+========================== */
 .subti {
     display: grid;
     place-items: center;
@@ -23,7 +29,9 @@ main {
     box-shadow: 5px 5px 5px black;
 }
 
-
+/* ==========================
+   Botones principales (.bot)
+========================== */
 .bot {
     background-color: rgb(255 188 13);
     border-color: rgb(192 139 0);
@@ -38,6 +46,9 @@ main {
     color: black;
 }
 
+/* ==========================
+   Secciones comida y bebida
+========================== */
 .comida,
 .bebida {
     display: grid;
@@ -46,22 +57,34 @@ main {
     padding: 2vw;
 }
 
+/* ==========================
+   Estilo lista (ulsty)
+========================== */
 .ulsty {
     padding: 0;
     border-radius: 20px;
     border-style: none;
 }
 
+/* ==========================
+   Imágenes dentro de .image
+========================== */
 .image img {
     height: 140px;
 }
 
+/* ==========================
+   Items de la lista ocultos por defecto
+========================== */
 .list-group-item {
     display: none;
     width: 60vw;
     height: 17vw;
 }
 
+/* ==========================
+   Estilos item2 específicos
+========================== */
 .item2 img {
     height: 90px;
 }
@@ -71,27 +94,10 @@ main {
     place-items: center;
 }
 
-#btnradio1:checked~.btn-group~.list-group .item1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
-#btnradio2:checked~.btn-group~.list-group .item2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
-#btnradio3:checked~.btn-group~.list-group .item3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
+/* ==========================
+   Control de visibilidad con radio buttons (item1, item2, item3)
+========================== */
+#btnradio1:checked~.btn-group~.list-group .item1,
 #btnradi1:checked~.btn-group~.list-group .item1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -99,6 +105,7 @@ main {
     padding: 20px;
 }
 
+#btnradio2:checked~.btn-group~.list-group .item2,
 #btnradi2:checked~.btn-group~.list-group .item2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -106,6 +113,7 @@ main {
     padding: 20px;
 }
 
+#btnradio3:checked~.btn-group~.list-group .item3,
 #btnradi3:checked~.btn-group~.list-group .item3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -113,6 +121,9 @@ main {
     padding: 20px;
 }
 
+/* ==========================
+   Control general del menú
+========================== */
 .menu-control {
     display: grid;
     justify-content: center;
@@ -123,6 +134,9 @@ main {
     display: none;
 }
 
+/* ==========================
+   Texto dentro de la lista
+========================== */
 .list-text {
     display: flex;
     flex-direction: column;
@@ -136,28 +150,46 @@ main {
     font-weight: 600;
 }
 
+/* ==========================
+   Contenedor precio
+========================== */
 .cjprecio {
     display: grid;
     justify-content: end;
     text-align: end;
 }
 
+/* ==========================
+   Botón pequeño
+========================== */
 .boton {
     font-size: 0.7rem;
     height: 3vw;
 }
 
+/* ==========================
+   Precio
+========================== */
 .precio {
     font-weight: 600;
 }
-.fixed-bottom{
+
+/* ==========================
+   Estilos fixed bottom
+========================== */
+.fixed-bottom {
     display: grid;
     place-items: end;
 }
-.btn-fixed{
+
+.btn-fixed {
     margin: 10px 10px;
-    background-color:chocolate ;
+    background-color: chocolate;
 }
-.modal-header h1{
+
+/* ==========================
+   Modal header título
+========================== */
+.modal-header h1 {
     font-weight: 600;
 }

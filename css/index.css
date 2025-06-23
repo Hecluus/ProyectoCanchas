@@ -1,3 +1,6 @@
+/* ==========================
+   Header y fondo principal
+========================== */
 header {
     display: block;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Assets/img/bgheader.jpg);
@@ -6,6 +9,9 @@ header {
     background-size: cover;
 }
 
+/* ==========================
+   Navegación: enlaces y contenedores
+========================== */
 .nav-links {
     text-decoration: none;
     color: #fff;
@@ -19,17 +25,6 @@ header {
     border-radius: 10px;
     height: 13vh;
     width: 90vw;
-}
-
-.header-contenido {
-    width: 90%;
-    gap: 15px;
-}
-
-.header-contenido h1 {
-    font-size: 3.5rem;
-    font-weight: 900;
-    text-shadow: var(--main-clr2) 10px 5px 10px;
 }
 
 #nav {
@@ -60,6 +55,9 @@ header {
     transform: scale(1.1);
 }
 
+/* ==========================
+   Botones de login
+========================== */
 .btn-login {
     width: 10vw;
     background-color: #adb5bd;
@@ -75,11 +73,7 @@ header {
     color: #212529;
 }
 
-#iniciar a {
-    margin: 5px;
-    font-size: 0.9rem;
-}
-
+/* Ajuste extra para btn-login (sobrescribe anteriores) */
 .btn-login {
     background-color: #7fffd4;
     border: none;
@@ -94,11 +88,25 @@ header {
     background-color: #5fb598;
 }
 
+/* ==========================
+   Sección iniciar (links)
+========================== */
+#iniciar a {
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+/* ==========================
+   Main y fondo principal
+========================== */
 main {
     background-color: #2E7D32;
     min-height: 100vh;
 }
 
+/* ==========================
+   Sección F5 (canchas)
+========================== */
 .F5 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -109,6 +117,9 @@ main {
     text-align: center;
 }
 
+/* ==========================
+   Sección food (comida)
+========================== */
 .food {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -118,6 +129,9 @@ main {
     place-items: center;
 }
 
+/* ==========================
+   Cards (tarjetas)
+========================== */
 .card {
     background-color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -131,6 +145,14 @@ main {
     overflow: hidden;
 }
 
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================
+   Subtítulo sección
+========================== */
 #subti {
     padding: 50px;
 }
@@ -142,11 +164,9 @@ main {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-}
-
+/* ==========================
+   Botón central
+========================== */
 #boton {
     display: flex;
     justify-content: center;
@@ -154,7 +174,9 @@ main {
     padding: 50px;
 }
 
-
+/* ==========================
+   Menú food
+========================== */
 #menu {
     display: flex;
     flex-direction: column;
@@ -168,6 +190,9 @@ main {
     font-weight: 600;
 }
 
+/* ==========================
+   Textos secundarios en food
+========================== */
 .ps2 {
     font-size: 0.8rem;
     text-align: center;
@@ -178,6 +203,9 @@ main {
     font-weight: 600;
 }
 
+/* ==========================
+   Media queries (pantallas medianas)
+========================== */
 @media (max-width: 768px) {
     .F5 {
         padding: 0 5vw;
@@ -215,6 +243,9 @@ main {
     }
 }
 
+/* ==========================
+   Media queries (pantallas pequeñas)
+========================== */
 @media (max-width: 480px) {
     .header-contenido {
         text-align: center;
