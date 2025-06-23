@@ -1,184 +1,121 @@
-/* ==========================
-   Reset global y box-sizing
-========================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+main {
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 40px;
 }
 
-/* ==========================
-   Contenedor principal de botones
-========================== */
-.Contenedorbtns {
-    background-color: rgb(8, 39, 23);
-    display: flex;
+.caja-principal {
+    background-color: var(--main-clr6);
+    width: 80%;
+    height: 90%;
+    border-radius: 60px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    height: 10vh;
+    padding: 3vw;
+}
+
+.contenedorbtns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    min-height: 65vh;
     width: 100%;
-    height: 400px;
+    justify-content: center;
+    place-items: center;
+    gap: 5vw;
+    padding: 50px;
+    text-align: center;
+    color: white;
 }
 
-/* ==========================
-   Botón o caja mb-1
-========================== */
-.mb-1 {
-    background-color: rgb(84, 233, 99);
-    width: 45%;
-    height: 35%;
-    margin-left: 2%;
-    margin-top: 2%;
-    border: solid;
-    box-shadow: 5px 5px 20px 10px rgba(135, 132, 132, 0.2);
-}
-
-/* ==========================
-   Botón o caja mb-2
-========================== */
-.mb-2 {
-    background-color: rgb(84, 233, 99);
-    width: 45%;
-    height: 27%;
-    margin-top: 10.5%;
-    margin-left: -45%;
-    border: solid;
-    box-shadow: 5px 5px 20px 10px rgba(135, 132, 132, 0.2);
-}
-
-/* ==========================
-   Contenedor general
-========================== */
-.contenedor {
-    display: flex;
-    background-color: rgb(18, 87, 40);
-    height: 50%;
-    border: solid;
-}
-
-/* ==========================
-   Caja principal dentro del contenedor
-========================== */
 .caja1 {
-    display: flex;
-    background-color: var(--main-clr5);
+    display: grid;
+    justify-content: center;
+    background-color: var(--main-clr7);
+    padding: 30px;
     width: 100%;
-    height: 450px;
-    opacity: 100%;
-    border: solid;
+    height: 95%;
+    border-radius: 20px;
+    color: black;
+    margin-top: 10px;
 }
 
-/* ==========================
-   Título de contacto
-========================== */
-.titulocontacto {
-    margin-top: 5%;
-    height: 10%;
-    margin-left: 5%;
+.caja2 {
+    display: grid;
+    justify-content: center;
+    background-color: var(--main-clr7);
+    width: 100%;
+    height: 95%;
+    padding: 30px;
+    color: black;
+    border-radius: 20px;
 }
 
-/* ==========================
-   Párrafo de contacto
-========================== */
-.parrafocontacto {
-    margin-top: 10%;
-    height: 10%;
-    margin-left: -13%;
+.mapa-h2 {
+    font-size: 1.4rem;
 }
 
-/* ==========================
-   Lista de contacto
-========================== */
-.lista {
-    margin-top: 12%;
-    height: 25%;
-    margin-left: -14.5%;
-}
-
-/* ==========================
-   Logo 1
-========================== */
-.logo1 {
-    margin-left: 15%;
-    height: 20%;
-    margin-top: 5%;
-    width: 5%;
-}
-
-/* ==========================
-   Número de teléfono
-========================== */
-.numerotelefono {
-    font-size: larger;
-    height: 10%;
-    margin-top: 15%;
-    margin-left: -6%;
-}
-
-/* ==========================
-   Logo 2
-========================== */
-.logo2 {
-    height: 19%;
-    margin-top: 5%;
-    margin-left: 21%;
-    width: 5%;
-}
-
-/* ==========================
-   Email
-========================== */
-.email {
-    font-size: larger;
-    height: 10%;
-    margin-top: 15%;
-    margin-left: -9%;
-}
-
-/* ==========================
-   Logo 3
-========================== */
-.logo3 {
-    height: 18%;
-    margin-top: 5%;
-    width: 5%;
-    margin-left: 18%;
-}
-
-/* ==========================
-   Ubicación
-========================== */
-.ubicacion {
-    font-size: larger;
-    height: 15%;
-    margin-top: 15%;
-    margin-left: -12%;
+.boton {
+    margin-top: 10px;
 }
 
 /* ==========================
    Mapa
 ========================== */
+.caja-mapa {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .mapa {
-    border-radius: 100px;
-    margin-top: 2%;
-    margin-left: 18%;
-    width: 300px;
-    height: 250px;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.mapa iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 /* ==========================
    Efecto hover en mapa
 ========================== */
 .mapa:hover {
-    width: 320px;
-    height: 280px;
+    width: 24vw;
+    height: 17vw;
 }
 
-/* ==========================
-   Texto ubicación del mapa
-========================== */
-.ubicacionmapa {
-    color: azure;
-    height: 12%;
-    font-size: larger;
-    margin-top: 20%;
-    margin-left: -18%;
-    font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+    }
+
+    .caja-principal {
+        width: 100%;
+    }
+
+    .contenedorbtns {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 12px;
+    }
+
+    .mapa {
+        height: 70vw;
+        width: 100%;
+    }
+
+    .mapa:hover {
+        height: 100%;
+    }
 }
