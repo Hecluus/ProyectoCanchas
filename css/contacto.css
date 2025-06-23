@@ -1,9 +1,15 @@
+/* ==========================
+   Reset global y box-sizing
+========================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ==========================
+   Contenedor principal de botones
+========================== */
 .Contenedorbtns {
     background-color: rgb(8, 39, 23);
     display: flex;
@@ -11,6 +17,9 @@
     height: 400px;
 }
 
+/* ==========================
+   Botón o caja mb-1
+========================== */
 .mb-1 {
     background-color: rgb(84, 233, 99);
     width: 45%;
@@ -19,9 +28,11 @@
     margin-top: 2%;
     border: solid;
     box-shadow: 5px 5px 20px 10px rgba(135, 132, 132, 0.2);
-
 }
 
+/* ==========================
+   Botón o caja mb-2
+========================== */
 .mb-2 {
     background-color: rgb(84, 233, 99);
     width: 45%;
@@ -30,18 +41,21 @@
     margin-left: -45%;
     border: solid;
     box-shadow: 5px 5px 20px 10px rgba(135, 132, 132, 0.2);
-
 }
 
+/* ==========================
+   Contenedor general
+========================== */
 .contenedor {
     display: flex;
-
     background-color: rgb(18, 87, 40);
     height: 50%;
     border: solid;
-
 }
 
+/* ==========================
+   Caja principal dentro del contenedor
+========================== */
 .caja1 {
     display: flex;
     background-color: var(--main-clr5);
@@ -51,53 +65,66 @@
     border: solid;
 }
 
+/* ==========================
+   Título de contacto
+========================== */
 .titulocontacto {
-
     margin-top: 5%;
     height: 10%;
     margin-left: 5%;
 }
 
+/* ==========================
+   Párrafo de contacto
+========================== */
 .parrafocontacto {
-
     margin-top: 10%;
     height: 10%;
     margin-left: -13%;
 }
 
+/* ==========================
+   Lista de contacto
+========================== */
 .lista {
-
     margin-top: 12%;
     height: 25%;
     margin-left: -14.5%;
 }
 
+/* ==========================
+   Logo 1
+========================== */
 .logo1 {
-
     margin-left: 15%;
     height: 20%;
     margin-top: 5%;
     width: 5%;
-
 }
 
+/* ==========================
+   Número de teléfono
+========================== */
 .numerotelefono {
     font-size: larger;
     height: 10%;
     margin-top: 15%;
     margin-left: -6%;
-
-
 }
 
+/* ==========================
+   Logo 2
+========================== */
 .logo2 {
     height: 19%;
     margin-top: 5%;
     margin-left: 21%;
     width: 5%;
-
 }
 
+/* ==========================
+   Email
+========================== */
 .email {
     font-size: larger;
     height: 10%;
@@ -105,24 +132,29 @@
     margin-left: -9%;
 }
 
+/* ==========================
+   Logo 3
+========================== */
 .logo3 {
-
-
     height: 18%;
     margin-top: 5%;
     width: 5%;
     margin-left: 18%;
 }
 
+/* ==========================
+   Ubicación
+========================== */
 .ubicacion {
-
     font-size: larger;
     height: 15%;
     margin-top: 15%;
     margin-left: -12%;
-
 }
 
+/* ==========================
+   Mapa
+========================== */
 .mapa {
     border-radius: 100px;
     margin-top: 2%;
@@ -131,11 +163,17 @@
     height: 250px;
 }
 
+/* ==========================
+   Efecto hover en mapa
+========================== */
 .mapa:hover {
     width: 320px;
     height: 280px;
 }
 
+/* ==========================
+   Texto ubicación del mapa
+========================== */
 .ubicacionmapa {
     color: azure;
     height: 12%;

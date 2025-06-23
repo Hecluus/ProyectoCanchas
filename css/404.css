@@ -1,9 +1,15 @@
+/* ==========================
+   Estilos globales para html y body
+========================== */
 html,
 body {
     height: 100%;
     margin: 0;
 }
 
+/* ==========================
+   Estilo principal del main
+========================== */
 main {
     display: flex;
     justify-content: center;
@@ -13,6 +19,9 @@ main {
     padding: 0;
 }
 
+/* ==========================
+   Sección central dentro del main
+========================== */
 section {
     display: flex;
     flex-direction: column;
@@ -23,6 +32,9 @@ section {
     border-radius: 20px;
 }
 
+/* ==========================
+   Título h1
+========================== */
 h1 {
     color: #ffffff;
     text-align: center;
@@ -32,6 +44,9 @@ h1 {
     text-shadow: 0 0 10px black;
 }
 
+/* ==========================
+   Estilos para enlaces dentro de boton
+========================== */
 .boton a {
     font-size: 1.3rem;
     font-weight: 400;

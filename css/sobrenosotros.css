@@ -1,9 +1,15 @@
+/* ==========================
+   Reset global
+========================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ==========================
+   Contenedor general de la sección "Sobre Nosotros"
+========================== */
 .contenedornosotros {
     display: flex;
     justify-content: space-evenly;
@@ -12,6 +18,9 @@
     height: 100vh;
 }
 
+/* ==========================
+   Contenedor del título y párrafo
+========================== */
 .contenedor1 {
     display: flex;
     justify-content: center;
@@ -31,10 +40,13 @@
     width: 1100px;
     font-size: 35px;
     margin-left: 21%;
-    color:white;
+    color: white;
     height: 15%;
 }
 
+/* ==========================
+   Contenedor de integrantes
+========================== */
 .contenedor2 {
     display: flex;
     flex-direction: column;
@@ -43,6 +55,9 @@
     height: 90%;
 }
 
+/* ==========================
+   Integrantes
+========================== */
 .integrante1,
 .integrante2,
 .integrante3,
@@ -52,6 +67,9 @@
     height: 185px;
 }
 
+/* ==========================
+   Imágenes de los integrantes
+========================== */
 .imgequipo1,
 .imgequipo2,
 .imgequipo3,
@@ -82,6 +100,9 @@
     animation-delay: 6s;
 }
 
+/* ==========================
+   Animación para imágenes
+========================== */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -92,6 +113,9 @@
     }
 }
 
+/* ==========================
+   Nombres de los integrantes
+========================== */
 .nombreintegrante1,
 .nombreintegrante2,
 .nombreintegrante3,
@@ -119,6 +143,9 @@
     animation-delay: 6s;
 }
 
+/* ==========================
+   Animación para nombres
+========================== */
 @keyframes fadeInText {
     from {
         opacity: 0;

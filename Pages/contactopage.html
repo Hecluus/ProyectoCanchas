@@ -2,19 +2,29 @@
 <html lang="en">
 
 <head>
+    <!-- ==========================
+         Metadatos y Recursos
+    ========================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pagina de contacto</title>
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <!-- Iconos Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/contacto.css">
 </head>
 
-
 <body>
-
+    <!-- ==========================
+         Encabezado / Navegación
+    ========================== -->
     <header>
         <section class="nav-contenedor">
             <nav id="nav" class="d-flex justify-content-between">
@@ -33,9 +43,14 @@
             </nav>
         </section>
     </header>
+
+    <!-- ==========================
+         Contenido Principal
+    ========================== -->
     <main>
         <section>
             <div class="Contenedorbtns">
+                <!-- Formulario de contacto -->
                 <div class="mb-1">
                     <label for="exampleFormControlInput1" class="form-label">Email </label>
                     <input type="email" class="form-control" id="exampleFormControlInput1"
@@ -46,21 +61,23 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     <button type="button" class="btn btn-primary">enviar</button>
                 </div>
+
+                <!-- Mapa de ubicación -->
                 <iframe class="mapa"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.0536597605933!2d-65.2647294248388!3d-26.806419988770546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d21e9df306f%3A0x11cb676224291c1f!2sAv.%20Juan%20Domingo%20Per%C3%B3n%20125%2C%20T4000%20Yerba%20Buena%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1750460196587!5m2!1ses!2sar"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <h1 class="ubicacionmapa">San Miguel de Tucuman -Argentina</h1>
             </div>
-            </div>
-            </div>
-        </section>
         </section>
     </main>
+
+    <!-- ==========================
+         Pie de Página / Footer
+    ========================== -->
     <footer class="bg-dark text-white py-4">
         <div class="pie-pag">
             <div class="row">
-
                 <!-- Contacto -->
                 <div class="col-md-4 mb-4">
                     <h2>Contactanos</h2>
@@ -99,6 +116,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- ==========================
+         Scripts Bootstrap
+    ========================== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
