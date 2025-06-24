@@ -1,0 +1,16 @@
+form {
+    background-color: #3db581;
+    width: 65%;
+}
+
+#registrar {
+    background-color: rgb(106, 241, 120);
+    padding: 7px;
+    border-radius: 20px;
+    width: 95%;
+    margin-top: 10px;
+}
+
+#registrar:hover {
+    background-color: rgb(20, 180, 39);
+}
