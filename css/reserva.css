@@ -1,121 +1,95 @@
 /* ==========================
-   Reset global
+   Body
 ========================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
+body {
+    background-color: var(--main-clr5);
+}
 /* ==========================
    Main container
 ========================== */
 main {
-    min-height: 100vw;
-    padding: 3vw;
+    height: 90vh;
 }
 
 /* ==========================
-   Títulos h2 dentro de main
+   Estilos de la cuadrilla
 ========================== */
-main h2 {
-    padding: 1vw;
-    color: white;
-    font-weight: 600;
+
+.col {
+    border: 1px solid #c0b8b8;
 }
 
-/* ==========================
-   Canchas contenedores
-========================== */
-.cancha1,
-.cancha2,
-.cancha3 {
-    display: grid;
-    gap: 15px;
-    margin-bottom: 1vw;
-    border: 3px solid #000;
-    padding: 50px;
-    border-radius: 25px;
-}
-
-/* ==========================
-   Item grid para horas
-========================== */
 .grid-item-hora {
-    background-color: #fff;
-    border: 1px solid #000;
-    padding: 20px;
+    border: 1px solid #c0b8b8;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
 }
 
-/* ==========================
-   Item grid general
-========================== */
 .grid-item {
-    background-color: #4f4;
-    border: 1px solid #000;
-    padding: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+    color: #fff;
+}
+
+.col-vacia {
+    background-color: #6b9488;
+}
+
+.col-vacia:hover {
+    background-color: #78ff70;
     cursor: pointer;
 }
 
 /* ==========================
-   Indicadores de estado
+   Dropdown
 ========================== */
-.reservado {
-    width: 17px;
-    height: 17px;
-    background-color: #4f4;
-    margin-right: 5px;
-}
 
-.no-disponible {
-    width: 17px;
-    height: 17px;
-    background-color: #f00;
-    margin-right: 5px;
-}
-
-.texto-estado {
-    margin-right: 10px;
-}
-
-/* ==========================
-   Contenedor confirmación turno
-========================== */
-#confirmacion-turno {
-    background-color: #D2D0A0;
-    width: 600px;
-    height: 400px;
+.btn-reserva {
+    background-color: #0f0;
+    padding: 7px;
     border-radius: 20px;
+    width: 88%;
+}
+
+.btn-reserva:hover {
+    background-color: rgb(15, 223, 105);
+}
+
+.dropdown-menu {
+    width: 365px;
+}
+
+.dpdn-span {
+    margin: 10px 100px;
+    margin: 0;
+}
+
+.info-dd-1 {
+    width: 95%;
+}
+
+.contenedor-info-dd-2 {
+    width: 95%;
 }
 
 /* ==========================
-   Elementos cancha y fecha/hora
+   Informacion de las reservas
 ========================== */
-.cancha-n,
-.fecha-hora {
-    width: 150px;
-    height: 80px;
-    background-color: #fff;
+
+#reservado {
+    background-color: #e94c0e;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
 }
 
-/* ==========================
-   Métodos de pago (tarjeta, efectivo)
-========================== */
-.tarjeta,
-.efectivo {
-    background-color: #fff;
-    width: 120px;
-    height: 100px;
-    cursor: pointer;
-}
-
-/* ==========================
-   Botón confirmar turno
-========================== */
-#btn-confirmar {
-    padding: 10px 20px;
-    display: block;
-    margin: auto;
-    margin-top: 40px;
-    width: 300px;
+#disponible {
+    background-color: #6b9488;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    margin-left: 15px;
 }

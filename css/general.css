@@ -124,6 +124,7 @@ Logo
     border-radius: 10px;
     font-size: 0.8rem;
     font-weight: 00;
+    width: 200px;
 }
 
 .btn-login:hover {
