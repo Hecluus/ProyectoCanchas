@@ -29,7 +29,7 @@
                 </div>
                 <div id="iniciar">
                     <a href="./login.html" class="btn btn-primary btn-login">Iniciar Sesión</a>
-                    <a href="../Pages/404Page.html" class="btn btn-primary btn-login">Registrar</a>
+                    <a href="./registro.html" class="btn btn-primary btn-login">Registrar</a>
                 </div>
             </nav>
         </section>
@@ -39,243 +39,179 @@
              Contenido Principal
     ========================== -->
     <main>
-        <!-- ==========================
-             Título de Página
-        ========================== -->
-        <h2 class="d-flex justify-content-center">Reservas F5</h2>
+        <h1 class="text-center text-light m-3">Rerserva F5</h1>
+        <section>
+            <div class="container reserva-contenedor bg-light p-4 rounded-5 shadow-lg">
+                <div class="dia pb-1 d-flex justify-content-center">
+                    <label for="fecha"><b>Selecciona un dia:</b>
+                        <input type="date" name="" id="cal">
+                    </label>
+                </div>
+                <div class="mr-5 d-flex flex-flow-wrap align-items-center">
+                    <div id="reservado"></div>
+                    <span><b>Reservado</b></span>
+                    <div id="disponible"></div>
+                    <span><b>Disponible</b></span>
+                </div>
+                <div class="text-center container" id="reserva">
+                    <div class="row">
+                        <div class="col grid-item-hora col-md-1 border-start-0"></div>
+                        <div class="col grid-item-hora"><b>11</b></div>
+                        <div class="col grid-item-hora"><b>12</b></div>
+                        <div class="col grid-item-hora"><b>13</b></div>
+                        <div class="col grid-item-hora"><b>14</b></div>
+                        <div class="col grid-item-hora"><b>15</b></div>
+                        <div class="col grid-item-hora"><b>16</b></div>
+                        <div class="col grid-item-hora"><b>17</b></div>
+                        <div class="col grid-item-hora"><b>18</b></div>
+                        <div class="col grid-item-hora"><b>19</b></div>
+                        <div class="col grid-item-hora"><b>20</b></div>
+                        <div class="col grid-item-hora"><b>21</b></div>
+                        <div class="col grid-item-hora"><b>22</b></div>
+                        <div class="col grid-item-hora"><b>23</b></div>
+                        <div class="col grid-item-hora"><b>24</b></div>
+                        <div class="col grid-item-hora"><b>1</b></div>
+                    </div>
 
-        <!-- ==========================
-             Sección Cancha 1
-        ========================== -->
-        <section class="cancha1">
-            <h3 class="titulo-Cancha d-flex justify-content-center">Cancha 1</h3>
-            <input type="date" name="" id="" class="form-control" class="d-block m-auto" />
-            <div class="d-flex flex-flow-wrap justify-content-center align-items-center">
-                <div class="reservado"></div>
-                <span class="texto-estado">reservado</span>
-                <div class="no-disponible"></div>
-                <span class="d-flex align-items-center texto-estado">no disponible</span>
-            </div>
-            <div class="container text-center grid-contenedor">
-                <div class="row">
-                    <div class="col grid-item-hora col-md-1">Horas</div>
-                    <div class="col grid-item-hora">11</div>
-                    <div class="col grid-item-hora">12</div>
-                    <div class="col grid-item-hora">13</div>
-                    <div class="col grid-item-hora">14</div>
-                    <div class="col grid-item-hora">15</div>
-                    <div class="col grid-item-hora">16</div>
-                    <div class="col grid-item-hora">17</div>
-                    <div class="col grid-item-hora">18</div>
-                    <div class="col grid-item-hora">19</div>
-                    <div class="col grid-item-hora">20</div>
-                    <div class="col grid-item-hora">21</div>
-                    <div class="col grid-item-hora">22</div>
-                    <div class="col grid-item-hora">23</div>
-                    <div class="col grid-item-hora">24</div>
-                    <div class="col grid-item-hora">1</div>
-                </div>
-                <div class="row">
-                    <div class="col grid-item col-md-1 bg-white">Estado</div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                </div>
-            </div>
-            <article id="article-confirmacion" class="d-flex justify-content-center mt-3">
-                <div id="confirmacion-turno">
-                    <h3 class="d-flex justify-content-center">Confirme su Reserva</h3>
-                    <div class="d-flex flex-flow-wrap justify-content-evenly">
-                        <div class="text-center fecha-hora bg-white d-flex flex-column justify-content-center">
-                            <span>Fecha y Hora</span>
-                            <span>Sabado de 17-18</span>
-                        </div>
-                        <div class="text-center cancha-n bg-white d-flex flex-column justify-content-center">
-                            <span>Cancha</span>
-                            <span>Cancha nº1</span>
-                        </div>
-                    </div>
-                    <h3 class="d-flex justify-content-center mt-3">Elija un Metodo de Pago</h3>
-                    <div class="d-flex flex-flow-wrap justify-content-evenly">
-                        <div class="efectivo d-flex justify-content-center">
-                            <img src="../assets/img/dinero-en-efectivo.png" alt="" width="85px" />
-                        </div>
-                        <div class="tarjeta d-flex justify-content-center align-items-center">
-                            <img src="../assets/img/tarjeta-de-debito.png" alt="" width="75px" height="80" />
-                        </div>
-                    </div>
-                    <button id="btn-confirmar"
-                        class="bg-success text-light border border-1 border-black rounded-pill">Confirmar</button>
-                </div>
-            </article>
-        </section>
+    <!-- ==========================
+             Cancha 1
+    ========================== -->                
 
-        <!-- ==========================
-             Sección Cancha 2
-        ========================== -->
-        <section class="cancha2">
-            <h3 class="tituloCancha d-flex justify-content-center">Cancha 2</h3>
-            <input type="date" class="form-control" name="" id="" class="d-block m-auto" />
-            <div class="d-flex flex-flow-wrap justify-content-center align-items-center">
-                <div class="reservado"></div>
-                <span class="texto-estado">reservado</span>
-                <div class="no-disponible"></div>
-                <span class="d-flex align-items-center texto-estado">no disponible</span>
-            </div>
-            <div class="container text-center grid-contenedor">
-                <div class="row">
-                    <div class="col grid-item-hora col-md-1">Horas</div>
-                    <div class="col grid-item-hora">11</div>
-                    <div class="col grid-item-hora">12</div>
-                    <div class="col grid-item-hora">13</div>
-                    <div class="col grid-item-hora">14</div>
-                    <div class="col grid-item-hora">15</div>
-                    <div class="col grid-item-hora">16</div>
-                    <div class="col grid-item-hora">17</div>
-                    <div class="col grid-item-hora">18</div>
-                    <div class="col grid-item-hora">19</div>
-                    <div class="col grid-item-hora">20</div>
-                    <div class="col grid-item-hora">21</div>
-                    <div class="col grid-item-hora">22</div>
-                    <div class="col grid-item-hora">23</div>
-                    <div class="col grid-item-hora">24</div>
-                    <div class="col grid-item-hora">1</div>
-                </div>
-                <div class="row">
-                    <div class="col grid-item col-md-1 bg-white">Estado</div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                </div>
-            </div>
-            <article id="article-confirmacion" class="d-flex justify-content-center mt-3">
-                <div id="confirmacion-turno">
-                    <h3 class="d-flex justify-content-center">Confirme su Reserva</h3>
-                    <div class="d-flex flex-flow-wrap justify-content-evenly">
-                        <div class="text-center fecha-hora bg-white d-flex flex-column justify-content-center">
-                            <span>Fecha y Hora</span>
-                            <span>Sabado de 17-18</span>
+                    <div class="row">
+                        <div class="col grid-item col-md-1 bg-black border-start-0"><b>cancha 1</b></div>
+                        <div class="col grid-item col-vacia dropdown" data-bs-toggle="dropdown">
+                            <div class="dropdown-menu bg-light">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="d-flex flex-flow-wrap mt-3 border-bottom border-black p-1 info-dd-1">
+                                        <div class="mx-4">
+                                            <img src="./assets/img/cancha-de-futbol.png" alt="" width="30px"
+                                                height="30px">
+                                            <span class="dpdn-span"><b>Cancha 1</b></span>
+                                        </div>
+                                        <div class="mx-5">
+                                            <img src="./assets/img/reloj.png" alt="" width="30px" height="30px">
+                                            <span class="dpdn-span"><b>11:00</b></span>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom border-black contenedor-info-dd-2">
+                                        <div class="m-3 p-1 border border-success rounded-4 bg-opacity-50 bg-success">
+                                            <span class="mx-5">$30.000</span>
+                                            <span class="mx-5">60 min</span>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="m-2 btn-reserva">Reserva</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text-center cancha-n bg-white d-flex flex-column justify-content-center">
-                            <span>Cancha</span>
-                            <span>Cancha nº2</span>
-                        </div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
                     </div>
-                    <h3 class="d-flex justify-content-center mt-3">Elija un Metodo de Pago</h3>
-                    <div class="d-flex flex-flow-wrap justify-content-evenly">
-                        <div class="efectivo d-flex justify-content-center">
-                            <img src="../assets/img/dinero-en-efectivo.png" alt="" width="85px" />
-                        </div>
-                        <div class="tarjeta d-flex justify-content-center align-items-center">
-                            <img src="../assets/img/tarjeta-de-debito.png" alt="" width="75px" height="80" />
-                        </div>
-                    </div>
-                    <button id="btn-confirmar"
-                        class="bg-success text-light border border-1 border-black rounded-pill">Confirmar</button>
-                </div>
-            </article>
-        </section>
+        
+    <!-- ==========================
+             Cancha 2
+    ========================== -->      
 
-        <!-- ==========================
-             Sección Cancha 3
-        ========================== -->
-        <section class="cancha3">
-            <h3 class="tituloCancha d-flex justify-content-center">Cancha 3</h3>
-            <input type="date" name="" id="" class="form-control" class="d-block m-auto" />
-            <div class="d-flex flex-flow-wrap justify-content-center align-items-center">
-                <div class="reservado"></div>
-                <span class="texto-estado">reservado</span>
-                <div class="no-disponible"></div>
-                <span class="d-flex align-items-center texto-estado">no disponible</span>
-            </div>
-            <div class="container text-center grid-contenedor">
-                <div class="row">
-                    <div class="col grid-item-hora col-md-1">Horas</div>
-                    <div class="col grid-item-hora">11</div>
-                    <div class="col grid-item-hora">12</div>
-                    <div class="col grid-item-hora">13</div>
-                    <div class="col grid-item-hora">14</div>
-                    <div class="col grid-item-hora">15</div>
-                    <div class="col grid-item-hora">16</div>
-                    <div class="col grid-item-hora">17</div>
-                    <div class="col grid-item-hora">18</div>
-                    <div class="col grid-item-hora">19</div>
-                    <div class="col grid-item-hora">20</div>
-                    <div class="col grid-item-hora">21</div>
-                    <div class="col grid-item-hora">22</div>
-                    <div class="col grid-item-hora">23</div>
-                    <div class="col grid-item-hora">24</div>
-                    <div class="col grid-item-hora">1</div>
-                </div>
-                <div class="row">
-                    <div class="col grid-item col-md-1 bg-white">Estado</div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                    <div class="col grid-item"></div>
-                </div>
-            </div>
-            <article id="article-confirmacion" class="d-flex justify-content-center mt-3">
-                <div id="confirmacion-turno">
-                    <h3 class="d-flex justify-content-center">Confirme su Reserva</h3>
-                    <div class="d-flex flex-flow-wrap justify-content-evenly">
-                        <div class="text-center fecha-hora bg-white d-flex flex-column justify-content-center">
-                            <span>Fecha y Hora</span>
-                            <span>Sabado de 17-18</span>
+                    <div class="row">
+                        <div class="col grid-item col-md-1 bg-black border-start-0"><b>cancha 2</b></div>
+                        <div class="col grid-item col-vacia dropdown" data-bs-toggle="dropdown">
+                            <div class="dropdown-menu bg-light">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="d-flex flex-flow-wrap mt-3 border-bottom border-black p-1 info-dd-1">
+                                        <div class="mx-4">
+                                            <img src="./assets/img/cancha-de-futbol.png" alt="" width="30px"
+                                                height="30px">
+                                            <span class="dpdn-span"><b>Cancha 2</b></span>
+                                        </div>
+                                        <div class="mx-5">
+                                            <img src="./assets/img/reloj.png" alt="" width="30px" height="30px">
+                                            <span class="dpdn-span"><b>11:00</b></span>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom border-black contenedor-info-dd-2">
+                                        <div class="m-3 p-1 border border-success rounded-4 bg-opacity-50 bg-success">
+                                            <span class="mx-5">$30.000</span>
+                                            <span class="mx-5">60 min</span>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="m-2 btn-reserva">Reserva</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text-center cancha-n bg-white d-flex flex-column justify-content-center">
-                            <span>Cancha</span>
-                            <span>Cancha nº3</span>
-                        </div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
                     </div>
-                    <h3 class="d-flex justify-content-center mt-3">Elija un Metodo de Pago</h3>
-                    <div class="d-flex flex-flow-wrap justify-content-evenly">
-                        <div class="efectivo d-flex justify-content-center">
-                            <img src="../assets/img/dinero-en-efectivo.png" alt="" width="85px" />
+
+    <!-- ==========================
+             Cancha 3
+    ========================== -->      
+
+                    <div class="row">
+                        <div class="col grid-item col-md-1 bg-black border-start-0"><b>cancha 3</b></div>
+                        <div class="col grid-item col-vacia dropdown" data-bs-toggle="dropdown">
+                            <div class="dropdown-menu bg-light">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="d-flex flex-flow-wrap mt-3 border-bottom border-black p-1 info-dd-1">
+                                        <div class="mx-4">
+                                            <img src="./assets/img/cancha-de-futbol.png" alt="" width="30px"
+                                                height="30px">
+                                            <span class="dpdn-span"><b>Cancha 3</b></span>
+                                        </div>
+                                        <div class="mx-5">
+                                            <img src="./assets/img/reloj.png" alt="" width="30px" height="30px">
+                                            <span class="dpdn-span"><b>11:00</b></span>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom border-black contenedor-info-dd-2">
+                                        <div class="m-3 p-1 border border-success rounded-4 bg-opacity-50 bg-success">
+                                            <span class="mx-5">$30.000</span>
+                                            <span class="mx-5">60 min</span>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="m-2 btn-reserva" role="button">Reserva</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tarjeta d-flex justify-content-center align-items-center">
-                            <img src="../assets/img/tarjeta-de-debito.png" alt="" width="75px" height="80" />
-                        </div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
+                        <div class="col grid-item col-vacia"></div>
                     </div>
-                    <button id="btn-confirmar"
-                        class="bg-success text-light border border-1 border-black rounded-pill">Confirmar</button>
                 </div>
-            </article>
+            </div>
         </section>
     </main>
 

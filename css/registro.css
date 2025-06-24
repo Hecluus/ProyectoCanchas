@@ -1,3 +1,7 @@
+body {
+    background-color: var(--main-clr5);
+}
+
 form {
     background-color: #3db581;
     width: 65%;
