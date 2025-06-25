@@ -54,7 +54,7 @@ main {
 }
 
 .nav-contenedor {
-    display: grid;
+    display: flex;
     place-items: center;
     background-color: var(--main-clr2);
     border-radius: 10px;
@@ -191,8 +191,8 @@ Logo
     }
 
     .nav-contenedor {
-        height: 95%;
-        width: 80%;
+        height: 65vh;
+        width: 40vh;
         padding: 25px;
     }
 

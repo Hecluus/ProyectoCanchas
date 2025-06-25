@@ -58,22 +58,7 @@ header {
 /* ==========================
    Botones de login
 ========================== */
-.btn-login {
-    width: 10vw;
-    background-color: #adb5bd;
-    border-color: rgba(255, 255, 255, 0.2);
-    color: #212529;
-    border-radius: 10px;
-    font-size: 0.9rem;
-}
 
-.btn-login:hover {
-    background-color: #ced4da;
-    border-color: rgba(255, 255, 255, 0.2);
-    color: #212529;
-}
-
-/* Ajuste extra para btn-login (sobrescribe anteriores) */
 .btn-login {
     background-color: #7fffd4;
     border: none;
@@ -107,7 +92,7 @@ main {
 /* ==========================
    Sección F5 (canchas)
 ========================== */
-.F5 {
+.f5 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 50px;
@@ -136,6 +121,10 @@ main {
     background-color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.f5 .card-body{
+    max-height: 80px;
+    font-size: 0.9rem;
 }
 
 .card img {
@@ -167,10 +156,9 @@ main {
 /* ==========================
    Botón central
 ========================== */
-#boton {
+.boton {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    place-content: center;
     padding: 50px;
 }
 
