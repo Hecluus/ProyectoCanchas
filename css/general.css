@@ -1,13 +1,3 @@
-/* ==========================
-   Configuración global y reset
-========================== */
-
-html,
-body {
-    max-width: 100vw;
-    overflow-x: hidden;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -25,17 +15,6 @@ body {
 }
 
 /* ==========================
-   Header
-========================== */
-
-header {
-    display: grid;
-    place-items: center;
-    min-height: 12vw;
-    background-color: var(--main-clr1);
-}
-
-/* ==========================
    Main
 ========================== */
 
@@ -44,44 +23,75 @@ main {
 }
 
 /* ==========================
-   Navegación y enlaces
+   Header
 ========================== */
 
-.nav-links {
-    text-decoration: none;
-    color: #fff;
-    font-size: 30px;
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-clr1);
+    min-height: 18.2vh;
+    padding: 1.1rem 0.5rem;
 }
 
 .nav-contenedor {
-    display: flex;
-    place-items: center;
+    display: grid;
+    grid-template-columns: 0.3fr 3fr 0.9fr;
     background-color: var(--main-clr2);
-    border-radius: 10px;
-    padding: 5px;
-    height: 70%;
-    width: 95%;
+    justify-content: center;
+    place-items: center;
+    width: 100%;
+    border-radius: 1rem;
 }
+
+.header-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.nav-links {
+    transition: transform 0.4s ease, text-shadow 0.4s ease;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.nav-links:hover {
+    transform: translateY(-5px) scale(1);
+    text-shadow: 0 12px 10px var(--main-clr7);
+}
+
 
 /* ==========================
-   Navbar específico
+Botones login
 ========================== */
-
-#nav {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 50px;
+.login-btns {
+    display: flex;
+    gap: 10px;
     padding: 10px;
+    align-items: center;
 }
 
-#stlinks {
-    padding: 15px;
+.btn-login {
+    background-color: #adb5bd;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #212529;
     border-radius: 10px;
-    width: 60%;
+    font-size: 1rem;
+    min-width: 100px;
 }
 
+.btn-login:hover {
+    background-color: #ced4da;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #212529;
+}
 
 /* ==========================
 Logo
@@ -95,115 +105,91 @@ Logo
 }
 
 /* ==========================
-   Enlaces en navbar
+Footer
 ========================== */
-
-#nav a {
-    text-align: center;
-    font-size: 1.2rem;
+footer {
+    padding-top: 2rem;
 }
-
-#stlinks:hover>a {
-    opacity: 0.3;
-}
-
-#stlinks>a:hover {
-    opacity: 1 !important;
-    transform: scale(1.1);
-}
-
-/* ==========================
-   Botones login
-========================== */
-
-.btn-login {
-    max-width: 200px;
-    background-color: #adb5bd;
-    border-color: rgba(255, 255, 255, 0.2);
-    color: #212529;
-    border-radius: 10px;
-    font-size: 0.8rem;
-    font-weight: 00;
-    width: 200px;
-}
-
-.btn-login:hover {
-    background-color: #ced4da;
-    border-color: rgba(255, 255, 255, 0.2);
-    color: #212529;
-}
-
-/* ==========================
-   Sección iniciar (links)
-========================== */
-#iniciar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-}
-
-#iniciar a {
-    margin: 5px;
-    font-size: 0.9rem;
-}
-
-/* ==========================
-   Footer
-========================== */
 
 .pie-pag {
-    padding-left: 5vw;
-    padding-top: 5vw;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 /* ==========================
    Redes sociales
 ========================== */
-
-.link-redes a {
-    font-size: 2rem;
-    color: white;
-    margin: 1vw;
+.redes {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
 }
 
 /* ==========================
    Responsive para móvil
 ========================== */
-
-@media (max-width: 480px) {
-
-    #iniciar {
-        width: 100%;
-    }
-
-    #iniciar a {
-        font-size: 1rem;
-    }
-
-    #nav {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        margin: 0;
-        text-align: center;
+@media (max-width: 1024px) {
+    .btn-login {
+        width: 125px;
     }
 
     .nav-contenedor {
-        height: 65vh;
-        width: 40vh;
-        padding: 25px;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* ==========================
+  Header (responsive)
+========================== */
+    header {
+        height: 60vh;
     }
 
-    #stlinks {
+    .nav-contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 3fr 0.9fr;
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+
+    .header-nav {
         display: grid;
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
+        place-items: center;
+        justify-content: space-evenly;
+        height: 100%;
     }
 
-    .nav-links {
-        font-size: 1.2rem;
+    .header-nav a {
+        border-bottom: 2px solid var(--main-clr4);
+    }
+
+    /* ==========================
+  Footer (responsive)
+========================== */
+    .pie-pag {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap: 0.3rem;
+    }
+
+    .text-center {
+        display: grid;
+        place-content: center;
+        gap: 0.5rem;
+    }
+
+    .text-center small {
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+
+    #nav-footer {
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
     }
 }

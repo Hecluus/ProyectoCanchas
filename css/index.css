@@ -2,7 +2,8 @@
    Header y fondo principal
 ========================== */
 header {
-    display: block;
+    display: grid;
+    grid-template-rows: 0fr 0.8fr;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Assets/img/bgheader.jpg);
     min-height: 65vh;
     background-position: center;
@@ -12,48 +13,20 @@ header {
 /* ==========================
    Navegación: enlaces y contenedores
 ========================== */
-.nav-links {
-    text-decoration: none;
-    color: #fff;
-    font-size: 30px;
-}
 
 .nav-contenedor {
-    display: grid;
-    place-items: center;
-    background-color: var(--main-clr2);
-    border-radius: 10px;
+    grid-template-columns: 1fr;
+    background-color: transparent;
     height: 13vh;
     width: 90vw;
 }
 
-#nav {
-    display: grid;
-    justify-content: center;
-    width: 100%;
-    margin: 0 50px;
-    padding: 10px;
+.text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-#stlinks {
-    padding: 15px;
-    border-radius: 10px;
-    width: 80%;
-}
-
-#nav a {
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-#stlinks:hover>a {
-    opacity: 0.3;
-}
-
-#stlinks>a:hover {
-    opacity: 1 !important;
-    transform: scale(1.1);
-}
 
 /* ==========================
    Botones de login
@@ -66,19 +39,11 @@ header {
     padding: 8px 20px;
     text-align: center;
     width: 300px;
-    max-width: 550px;
+    max-width: 250px;
 }
 
 .btn-login:hover {
     background-color: #5fb598;
-}
-
-/* ==========================
-   Sección iniciar (links)
-========================== */
-#iniciar a {
-    margin: 5px;
-    font-size: 0.9rem;
 }
 
 /* ==========================
@@ -122,7 +87,8 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.f5 .card-body{
+
+.f5 .card-body {
     max-height: 80px;
     font-size: 0.9rem;
 }
@@ -158,8 +124,9 @@ main {
 ========================== */
 .boton {
     display: flex;
-    place-content: center;
-    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
 }
 
 /* ==========================
@@ -170,6 +137,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
 #menu h2 {
@@ -192,68 +160,30 @@ main {
 }
 
 /* ==========================
-   Media queries (pantallas medianas)
+  Header (responsive)
 ========================== */
-@media (max-width: 768px) {
-    .F5 {
-        padding: 0 5vw;
+@media (max-width: 480px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+
+    .btn-login {
+        max-width: 150px;
     }
 
     .nav-contenedor {
-        grid-template-columns: 1fr;
-        height: auto;
-        width: 95vw;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .btn-login {
-        width: 100%;
-        font-size: 1rem;
-        margin-top: 10px;
-    }
-
-    #stlinks {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        padding: 10px 0;
-        gap: 10px;
+        justify-content: space-evenly;
+        height: 100%;
+        padding: 0;
     }
 
-    #stlinks>a {
-        font-size: 1.2rem;
-    }
-
-    #nav {
-        margin: 0;
-        padding: 5px;
-    }
-}
-
-/* ==========================
-   Media queries (pantallas pequeñas)
-========================== */
-@media (max-width: 480px) {
-    .header-contenido {
-        text-align: center;
-        padding: 0 0 10vw;
-    }
-
-    .nav-links {
-        font-size: 1rem;
-    }
-
-    .btn-login {
-        font-size: 0.9rem;
-    }
-
-    header {
-        min-height: 15vh;
-    }
-
-    .header-contenido {
-        text-align: center;
-        padding: 0 0 10vw;
+    h1 {
+        border-bottom: 2px solid var(--main-clr4);
     }
 }
