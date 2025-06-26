@@ -7,15 +7,17 @@
     box-sizing: border-box;
 }
 
+main {
+    height: 100vh;
+}
+
 /* ==========================
    Contenedor general de la sección "Sobre Nosotros"
 ========================== */
 .contenedornosotros {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
     background-color: var(--main-clr5);
-    width: 100%;
-    height: 100vh;
 }
 
 /* ==========================
@@ -23,25 +25,28 @@
 ========================== */
 .contenedor1 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 30%;
-    margin-left: 5%;
+    align-items: center;
+    gap: 2rem;
 }
 
 .parrafo1 {
-    background-color: aquamarine;
-    margin-top: 70%;
-    height: 20%;
-    margin-left: -95%;
+    display: flex;
+    background-color: var(--main-clr6);
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    width: 55%;
+    height: 70%;
+    padding: 1rem;
 }
 
 .titulo1 {
-    margin-top: 40%;
-    width: 1100px;
-    font-size: 35px;
-    margin-left: 21%;
+    font-size: 2.5rem;
     color: white;
-    height: 15%;
+    border-bottom: 2px solid var(--main-clr3);
 }
 
 /* ==========================
@@ -50,9 +55,7 @@
 .contenedor2 {
     display: flex;
     flex-direction: column;
-    margin-top: 2.5%;
-    width: 50%;
-    height: 90%;
+    gap: 1rem;
 }
 
 /* ==========================
@@ -63,8 +66,8 @@
 .integrante3,
 .integrante4 {
     display: flex;
-    align-items: center;
-    height: 185px;
+    justify-content: space-between;
+    place-items: center;
 }
 
 /* ==========================
@@ -74,29 +77,25 @@
 .imgequipo2,
 .imgequipo3,
 .imgequipo4 {
-    width: 150px;
+    max-width: 150px;
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
 .imgequipo1 {
-    margin-left: 35%;
     animation-delay: 0s;
 }
 
 .imgequipo2 {
-    margin-left: 40%;
     animation-delay: 2s;
 }
 
 .imgequipo3 {
-    margin-left: 40%;
     animation-delay: 4s;
 }
 
 .imgequipo4 {
-    margin-left: 39%;
     animation-delay: 6s;
 }
 
@@ -121,10 +120,11 @@
 .nombreintegrante3,
 .nombreintegrante4 {
     color: white;
-    margin-left: 5%;
     animation-name: fadeInText;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    text-align: center;
+    border-bottom: 1px solid var(--main-clr3);
 }
 
 .nombreintegrante1 {
@@ -153,5 +153,44 @@
 
     to {
         opacity: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        height: 100%;
+    }
+
+    .contenedornosotros {
+        display: block;
+        grid-template-columns: 1fr;
+    }
+
+    .integrante1,
+    .integrante2,
+    .integrante3,
+    .integrante4 {
+        display: block;
+        padding: 2rem;
+    }
+
+    .titulo1 {
+        padding-top: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        height: 100%;
+    }
+
+    .contenedornosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 1.5rem;
+    }
+
+    .parrafo1 {
+        height: 100%;
     }
 }

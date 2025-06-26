@@ -7,18 +7,18 @@
     ========================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina de contacto</title>
-
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    
     <!-- Iconos Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
+    
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/contacto.css">
+    <title>Contacto</title>
 </head>
 
 <body>
@@ -27,20 +27,18 @@
     ========================== -->
     <header>
         <section class="nav-contenedor">
-            <nav id="nav" class="d-flex justify-content-between">
-                <img src="../Assets/img/logo.png" alt="logo" class="logo">
-                <div id="stlinks" class="d-flex justify-content-between gap-5">
-                    <a href="../index.html" class="nav-links">Inicio</a>
-                    <a href="./reservaf5.html" class="nav-links">Reserva-F5</a>
-                    <a href="./MenuPage.html" class="nav-links">Comida</a>
-                    <a href="#" class="nav-links">Contacto</a>
-                    <a href="./sobrenosotrospage.html" class="nav-links">Sobre Nosotros</a>
-                </div>
-                <div id="iniciar">
-                    <a href="./login.html" class="btn btn-primary btn-login">Iniciar Sesión</a>
-                    <a href="./registro.html" class="btn btn-primary btn-login">Registrar</a>
-                </div>
+            <img src="../Assets/img/logo.png" height="50px" alt="logo" class="logo">
+            <nav class="header-nav">
+                <a href="../index.html" class="nav-links">Inicio</a>
+                <a href="./reservaf5.html" class="nav-links">Reserva-F5</a>
+                <a href="../Pages/MenuPage.html" class="nav-links">Comida</a>
+                <a href="./contactopage.html" class="nav-links">Contacto</a>
+                <a href="#" class="nav-links">Sobre Nosotros</a>
             </nav>
+            <div class="login-btns">
+                <a href="./login.html" class="btn btn-primary btn-login">Iniciar Sesión</a>
+                <a href="./registro.html" class="btn btn-primary btn-login">Registrar</a>
+            </div>
         </section>
     </header>
 
@@ -69,58 +67,57 @@
                     <h2 class="mapa-h2"><i class="bi bi-geo-alt"></i>San Miguel de Tucuman -Argentina</h2>
                     <div class="caja-mapa">
                         <iframe class="mapa"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.0536597605933!2d-65.2647294248388!3d-26.806419988770546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d21e9df306f%3A0x11cb676224291c1f!2sAv.%20Juan%20Domingo%20Per%C3%B3n%20125%2C%20T4000%20Yerba%20Buena%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1750460196587!5m2!1ses!2sar"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.0536597605933!2d-65.2647294248388!3d-26.806419988770546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d21e9df306f%3A0x11cb676224291c1f!2sAv.%20Juan%20Domingo%20Per%C3%B3n%20125%2C%20T4000%20Yerba%20Buena%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1750460196587!5m2!1ses!2sar"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    </div>
-                </article>
-            </section>
-        </main>
-        
-        <!-- ==========================
+            </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- ==========================
         Pie de Página / Footer
     ========================== -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white">
         <div class="pie-pag">
-            <div class="row">
-                <!-- Contacto -->
-                <div class="col-md-4 mb-4">
-                    <h2>Contactanos</h2>
-                    <p>Comunicate con nuestro equipo</p>
-                    <ul class="list-unstyled">
-                        <li>✔ Buen Asesoramiento</li>
-                        <li>✔ Consultas</li>
-                        <li>✔ Torneos</li>
-                        <li>✔ Sponsor</li>
-                    </ul>
-                </div>
-
-                <!-- Información de contacto -->
-                <div class="col-md-4 mb-4">
-                    <h2>Información</h2>
-                    <p><i class="bi bi-telephone"></i> 381-156332211</p>
-                    <p><i class="bi bi-envelope"></i> GolazoGourmet@hotmail.com</p>
-                    <p><i class="bi bi-geo-alt"></i> Av. Perón 125, Tucumán, Argentina</p>
-                </div>
-
-                <!-- Redes sociales -->
-                <div class="col-md-4 mb-4 text-center">
-                    <h2>Redes Sociales</h2>
+            <!-- Contacto -->
+            <div class="text-center">
+                <h2>Contactanos</h2>
+                <p>Comunicate con nuestro equipo</p>
+                <ul class="list-unstyled">
+                    <li>✔ Buen Asesoramiento</li>
+                    <li>✔ Consultas</li>
+                    <li>✔ Torneos</li>
+                    <li>✔ Sponsor</li>
+                </ul>
+            </div>
+            <!-- Información de contacto -->
+            <div class="text-center">
+                <h2>Información</h2>
+                <p><i class="bi bi-telephone"></i> 381-156332211</p>
+                <p><i class="bi bi-envelope"></i> GolazoGourmet@hotmail.com</p>
+                <p><i class="bi bi-geo-alt"></i> Av. Perón 125, Tucumán, Argentina</p>
+            </div>
+            <!-- Redes sociales -->
+            <section class="redes text-center">
+                <h2>Redes Sociales</h2>
+                <nav id="nav-footer">
                     <a href="#" class="text-white fs-4 me-3"><i class="bi bi-instagram"></i></a>
                     <a href="#" class="text-white fs-4 me-3"><i class="bi bi-whatsapp"></i></a>
                     <a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
                     <div class="mt-3">
-                        <img src="../Assets/img/logo.png" alt="logo" class="logo" style="max-height: 50px;">
-                    </div>
+                </nav>
+                <div id="logo-footer">
+                    <img src="../Assets/img/logo.png" alt="logo" class="logo" style="max-height: 50px;">
                 </div>
-            </div>
-
-            <!-- Línea inferior -->
-            <div class="text-center mt-3">
-                <small>© 2025 Golazo Gourmet. Todos los derechos reservados.</small>
-            </div>
         </div>
+        </div>
+        </div>
+        <!-- Línea inferior -->
+        <section class="text-center">
+            <small>© 2025 Golazo Gourmet. Todos los derechos reservados.</small>
+        </section>
     </footer>
 
     <!-- ==========================

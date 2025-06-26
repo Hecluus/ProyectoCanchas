@@ -26,7 +26,7 @@ h1 {
     width: 100%;
     justify-content: center;
     place-items: center;
-    gap: 5vw;
+    gap: 1.5rem;
     padding: 50px;
     text-align: center;
     color: white;
@@ -95,27 +95,29 @@ h1 {
 }
 
 @media (max-width: 480px) {
-    main {
-        padding: 10px;
-    }
 
     .caja-principal {
         width: 100%;
+        background-color: transparent;
     }
 
     .contenedorbtns {
         display: grid;
         grid-template-columns: 1fr;
+        justify-content: center;
         width: 100%;
-        padding: 12px;
+        padding: 0;
     }
 
     .mapa {
-        height: 70vw;
+        height: 30vh;
         width: 100%;
     }
 
     .mapa:hover {
         height: 100%;
+    }
+    h1{
+        height: 80%;
     }
 }
