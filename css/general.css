@@ -48,6 +48,7 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .header-nav a {
@@ -177,7 +178,8 @@ footer {
 .botn {
     width: 150px;
 }
-.modal-header .btn-close{
+
+.modal-header .btn-close {
     margin: 0;
 }
 
