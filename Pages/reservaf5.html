@@ -37,12 +37,12 @@
              Contenido Principal
     ========================== -->
     <main>
-        <h1 class="text-center text-light m-3">Rerserva F5</h1>
+        <h1 class="text-center text-light m-3" id="ttl-reserva">Rerserva F5</h1>
         <section>
             <div class="container reserva-contenedor bg-light p-4 rounded-5 shadow-lg">
                 <div class="dia pb-1 d-flex justify-content-center">
-                    <label for="fecha"><b>Selecciona un dia:</b>
-                        <input type="date" name="" id="cal">
+                    <label for="fecha"><b class="fs-6">Selecciona un dia:</b>
+                        <input type="date" name="" id="cal" class="form-control bg-primary">
                     </label>
                 </div>
                 <div class="mr-5 d-flex flex-flow-wrap align-items-center">
@@ -71,9 +71,9 @@
                         <div class="col grid-item-hora"><b>1</b></div>
                     </div>
 
-    <!-- ==========================
+                    <!-- ==========================
              Cancha 1
-    ========================== -->                
+    ========================== -->
 
                     <div class="row">
                         <div class="col grid-item col-md-1 bg-black border-start-0"><b>cancha 1</b></div>
@@ -116,10 +116,10 @@
                         <div class="col grid-item col-vacia"></div>
                         <div class="col grid-item col-vacia"></div>
                     </div>
-        
-    <!-- ==========================
+
+                    <!-- ==========================
              Cancha 2
-    ========================== -->      
+    ========================== -->
 
                     <div class="row">
                         <div class="col grid-item col-md-1 bg-black border-start-0"><b>cancha 2</b></div>
@@ -163,9 +163,9 @@
                         <div class="col grid-item col-vacia"></div>
                     </div>
 
-    <!-- ==========================
+                    <!-- ==========================
              Cancha 3
-    ========================== -->      
+    ========================== -->
 
                     <div class="row">
                         <div class="col grid-item col-md-1 bg-black border-start-0"><b>cancha 3</b></div>
@@ -210,6 +210,162 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="seccion-comentarios-contenedor">
+            <article class="post-comentario rounded-4">
+                <div class="usuario-contenedor d-flex justify-content-between w-100">
+                    <div class="usuario-comentario d-flex p-3">
+                        <img class="imagen-usuario-comentario" src="../Assets/img/fotoPerfil3.jpeg"
+                            alt="foto de perfil">
+                        <div class="usuario-datos">
+                            <span class="nombre-perfil-comentario"><b>Juan Rodriguez</b></span>
+                            <br>
+                            <span class="dia">hace 22 dias</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comentario">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam cumque blanditiis saepe nostrum
+                    necessitatibus aspernatur distinctio nulla amet cupiditate dignissimos, voluptate esse ex fuga, quas
+                    reiciendis quisquam. Cupiditate, eum nesciunt!
+                </div>
+            </article>
+            <article class="post-comentario rounded-4">
+                <div class="usuario-contenedor d-flex justify-content-between w-100">
+                    <div class="usuario-comentario d-flex p-3">
+                        <img class="imagen-usuario-comentario" src="../Assets/img/fotoPerfil2.jpeg"
+                            alt="foto de perfil">
+                        <div class="usuario-datos">
+                            <span class="nombre-perfil-comentario"><b>Roberto</b></span>
+                            <br>
+                            <span class="dia">hace 15 dias</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comentario">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam cumque blanditiis saepe nostrum
+                    necessitatibus aspernatur distinctio nulla amet cupiditate dignissimos, voluptate esse ex fuga, quas
+                    reiciendis quisquam. Cupiditate, eum nesciunt!
+                </div>
+            </article>
+            <article class="post-comentario rounded-4">
+                <div class="usuario-contenedor d-flex justify-content-between w-100">
+                    <div class="usuario-comentario d-flex p-3">
+                        <img class="imagen-usuario-comentario" src="../Assets/img/fotoPerfil1.jpeg"
+                            alt="foto de perfil">
+                        <div class="usuario-datos">
+                            <span class="nombre-perfil-comentario"><b>Pepe</b></span>
+                            <br>
+                            <span class="dia">hace 10 dias</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comentario">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam cumque blanditiis saepe nostrum
+                    necessitatibus aspernatur distinctio nulla amet cupiditate dignissimos, voluptate esse ex fuga, quas
+                    reiciendis quisquam. Cupiditate, eum nesciunt!
+                </div>
+            </article>
+            <form action="" class="mb-3 p-3 bg-light rounded-1">
+                <div class="usuario-redactor d-flex">
+                    <img id="foto-redactor" src="../Assets/img/fotoPerfil1.jpeg" alt="">
+                    <div class="nombre-redactor"><b>Tú</b></div>
+                </div>
+                <textarea name="comentario-redactor" id="textarea" placeholder="Escribe un comentario"></textarea>
+                <label for="textarea">
+                    <button type="button" id="enviar-comentario">Comentar</button>
+                </label>
+            </form>
+        </section>
+        <section id="reserva-responsive-section">
+            <h2 class="text-center p-2 fs-2 text-success">Realiza tu reserva</h2>
+            <div class="shadow-lg py-3">
+                <article class="d-flex gap-2 justify-content-center" id="reserva-dias">
+                    <button class="">
+                        <span>LUN</span>
+                        <span>30</span>
+                        <span>Junio</span>
+                    </button>
+                    <button class="">
+                        <span>MAR</span>
+                        <span>1</span>
+                        <span>JUL</span>
+                    </button>
+                    <button class="">
+                        <span>MIE</span>
+                        <span>2</span>
+                        <span>JUL</span>
+                    </button>
+                    <button class="">
+                        <span>JUE</span>
+                        <span>3</span>
+                        <span>JUL</span>
+                    </button>
+                    <button class="">
+                        <span>VIE</span>
+                        <span>4</span>
+                        <span>JUL</span>
+                    </button>
+                </article>
+                <h2 class="text-center m-3 fs-5 text-primary">Horarios Disponibles</h2>
+                <div class="container text-center gap-3" id="contenedor-grid">
+                    <div class="row">
+                        <div class="col">
+                            11:00
+                        </div>
+                        <div class="col">
+                            13:00
+                        </div>
+                        <div class="col">
+                            15:00
+                        </div>
+                        <div class="col">
+                            16:00
+                        </div>
+                        <div class="col">
+                            17:00
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            19:00
+                        </div>
+                        <div class="col">
+                            20:00
+                        </div>
+                        <div class="col">
+                            22:00
+                        </div>
+                        <div class="col">
+                            23:00
+                        </div>
+                        <div class="col">
+                            1:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <article>
+                <h3 class="p-2 mt-4 text-success">Selecciona la cancha</h3>
+                <div class="p-3" id="cancha1-reserva-responsive">
+                    <h3>Cancha 1</h3>
+                    <div id="cancha1-responsive">
+                        <a href="../Pages/404Page.html" class="d-flex flex-column">
+                            <span><b>$30000</b></span>
+                            <span><b>60 min</b></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-3" id="cancha2-reserva-responsive">
+                    <h3>Cancha 2</h3>
+                    <div id="cancha1-responsive">
+                        <a href="../Pages/404Page.html" class="d-flex flex-column">
+                            <span><b>$30000</b></span>
+                            <span><b>60 min</b></span>
+                        </a>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
 
