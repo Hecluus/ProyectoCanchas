@@ -1,0 +1,282 @@
+/* ==========================
+   Main container
+========================== */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==========================
+   Subtítulo y estilo del h2 dentro
+========================== */
+.subti {
+    display: grid;
+    place-items: center;
+    height: 15vh;
+}
+
+.subti h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid var(--main-clr3);
+}
+
+/* ==========================
+   Botones principales
+========================== */
+.grupo-botones {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.bot {
+    background-color: rgb(255 188 13);
+    border: solid 1px;
+    border-color: rgb(192 139 0);
+    border-radius: 1rem;
+    color: black;
+    padding: 0.5rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+.bot:hover {
+    background-color: rgb(255 202 64);
+    border-color: rgb(192 139 0);
+    color: black;
+}
+
+/* ==========================
+   Secciones comida y bebida
+========================== */
+.comida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2E7D32;
+    padding: 1rem;
+    width: 70%;
+}
+
+/* ==========================
+   Estilo lista (ul)
+========================== */
+.ulsty {
+    padding: 0;
+    border-radius: 20px;
+    border-style: none;
+
+}
+
+/* ==========================
+   Imágenes dentro de .image
+========================== */
+.image img {
+    max-height: 120px;
+}
+
+.item2 img {
+    max-height: 90px;
+}
+
+.item2 .image {
+    display: grid;
+    place-items: center;
+}
+
+.item3 img {
+    max-height: 85px;
+    padding: 1px;
+}
+
+.item3 .image {
+    display: grid;
+    place-items: center;
+}
+
+/* ==========================
+   Items de la lista ocultos por defecto
+========================== */
+.list-group-item {
+    display: none;
+}
+
+.list-group {
+    place-content: center;
+
+}
+
+/* ==========================
+   Control general del menú
+========================== */
+.menu-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.menu-control input {
+    display: none;
+}
+
+/* ==========================
+   Texto dentro de la lista
+========================== */
+.list-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 0.8rem;
+    height: 100%;
+}
+
+.list-text h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* ==========================
+   Botón de compra
+========================== */
+.boton {
+    font-size: 0.7rem;
+    max-width: 100px;
+}
+
+/* ==========================
+   Contenedor precio
+========================== */
+.precio {
+    font-weight: 600;
+}
+
+.cjprecio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+/* ==========================
+   Estilos fixed bottom
+========================== */
+.fixed-bottom {
+    display: grid;
+    place-items: end;
+}
+
+.btn-fixed {
+    margin: 10px 10px;
+    background-color: chocolate;
+}
+
+/* ==========================
+   Modal header título
+========================== */
+.modal-header h1 {
+    font-weight: 600;
+}
+
+/* ==========================
+   Control de visibilidad con radio buttons (item1, item2, item3)
+========================== */
+#btnradio1:checked~.grupo-botones~.list-group .item1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    place-content: center;
+    height: 30vh;
+    padding: 1rem;
+}
+
+#btnradio2:checked~.grupo-botones~.list-group .item2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    place-content: center;
+    height: 30vh;
+    padding: 1rem;
+}
+
+#btnradio3:checked~.grupo-botones~.list-group .item3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    place-content: center;
+    height: 30vh;
+    padding: 1rem;
+}
+
+@media (max-width: 480px) {
+
+    .comida {
+        display: grid;
+        place-items: center;
+        width: 45vh;
+    }
+
+    .subti {
+        width: auto;
+    }
+
+    .precio {
+        width: 100%;
+    }
+
+    .cjprecio {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .boton {
+        font-size: 1rem;
+        max-width: 150px;
+    }
+
+    .list-text p {
+        font-size: 1.3rem;
+    }
+
+    .item2 img {
+        max-height: 70px;
+    }
+
+    .list-group {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 0;
+    }
+
+    .grupo-botones {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.8rem;
+    }
+
+    #btnradio1:checked~.grupo-botones~.list-group .item1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 55vh;
+    }
+
+    #btnradio2:checked~.grupo-botones~.list-group .item2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 55vh;
+    }
+
+    #btnradio3:checked~.grupo-botones~.list-group .item3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 55vh;
+
+    }
+}
