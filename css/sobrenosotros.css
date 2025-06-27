@@ -165,12 +165,16 @@ main {
         display: block;
         grid-template-columns: 1fr;
     }
+    .contenedor2{
+        align-items: center;
+    }
 
     .integrante1,
     .integrante2,
     .integrante3,
     .integrante4 {
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding: 2rem;
     }
 

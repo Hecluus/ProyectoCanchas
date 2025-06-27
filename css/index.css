@@ -167,8 +167,14 @@ main {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 2fr 1fr;
+        justify-content: center;
+        align-items: center;
         gap: 0.8rem;
         padding: 1rem;
+    }
+
+    .header-nav {
+        width: 100%;
     }
 
     .btn-login {
@@ -180,6 +186,7 @@ main {
         flex-direction: column;
         justify-content: space-evenly;
         height: 100%;
+        width: 100%;
         padding: 0;
     }
 
