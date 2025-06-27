@@ -1,15 +1,15 @@
 main {
     display: flex;
     justify-content: center;
-    min-height: 80vh;
-    padding: 40px;
+    align-items: center;
+    height: 100vh;
 }
 
 .caja-principal {
     background-color: var(--main-clr6);
-    width: 80%;
-    height: 90%;
+    width: 95%;
     border-radius: 60px;
+    padding: 1rem;
 }
 
 h1 {
@@ -21,34 +21,40 @@ h1 {
 
 .contenedorbtns {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    min-height: 65vh;
-    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    height: 65vh;
     justify-content: center;
     place-items: center;
     gap: 1.5rem;
-    padding: 50px;
+    padding: 1rem;
     text-align: center;
     color: white;
+}
+
+.caja {
+    width: 100%;
+    height: 95%;
 }
 
 .caja1 {
     display: grid;
     justify-content: center;
     background-color: var(--main-clr7);
-    padding: 30px;
-    width: 100%;
-    height: 95%;
     border-radius: 20px;
     color: black;
     margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.caja1 h2 {
+    display: flex;
+    align-items: center;
 }
 
 .caja2 {
     display: grid;
-    justify-content: center;
+    grid-template-rows: 0.4fr 1fr;
     background-color: var(--main-clr7);
-    width: 100%;
     height: 95%;
     padding: 30px;
     color: black;
@@ -56,19 +62,18 @@ h1 {
 }
 
 .mapa-h2 {
+    height: 20%;
     font-size: 1.4rem;
 }
 
 .boton {
-    margin-top: 10px;
+    margin-top: 1.5rem;
 }
 
 /* ==========================
    Mapa
 ========================== */
 .caja-mapa {
-    width: 100%;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +81,13 @@ h1 {
 
 .mapa {
     height: 100%;
-    border-radius: 50px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+
+}
+
+.mapa:hover {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
 }
 
 .mapa iframe {
@@ -86,15 +97,10 @@ h1 {
     border: 0;
 }
 
-/* ==========================
-   Efecto hover en mapa
-========================== */
-.mapa:hover {
-    width: 24vw;
-    height: 17vw;
-}
-
 @media (max-width: 480px) {
+    main{
+        height: 100%;
+    }
 
     .caja-principal {
         width: 100%;
@@ -106,7 +112,12 @@ h1 {
         grid-template-columns: 1fr;
         justify-content: center;
         width: 100%;
+        height: 100%;
         padding: 0;
+    }
+    .caja{
+        height: 100%;
+        padding: 1.5rem;
     }
 
     .mapa {
@@ -114,10 +125,16 @@ h1 {
         width: 100%;
     }
 
-    .mapa:hover {
-        height: 100%;
-    }
-    h1{
+    h1 {
         height: 80%;
+    }
+}
+
+@media (width: 1280px) {
+    .contenedorbtns *{
+        font-size: 1.5rem;
+    }
+    .caja1 h2{ 
+        font-size: 2.5rem;
     }
 }
