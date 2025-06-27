@@ -134,7 +134,7 @@ body {
 
 textarea {
     background: #eee;
-    width: 100% ;
+    width: 100%;
     height: 152px;
     margin: 10px 0;
     padding: 10px;
@@ -157,7 +157,7 @@ textarea:focus {
 }
 
 #enviar-comentario:hover {
-    background-color: var(--main-clr6); 
+    background-color: var(--main-clr6);
 }
 
 /* ==========================
@@ -165,8 +165,15 @@ textarea:focus {
 ========================== */
 
 @media (max-width: 480px) {
+    main {
+        height: 100%;
+        background-color: #fff;
+    }
 
-    .reserva-contenedor,#ttl-reserva,.seccion-comentarios-contenedor {
+
+    .reserva-contenedor,
+    #ttl-reserva,
+    .seccion-comentarios-contenedor {
         display: none;
     }
 
@@ -188,7 +195,7 @@ textarea:focus {
         font-size: 18px;
     }
 
-    button:active > span {
+    button:active>span {
         color: var(--main-clr5);
     }
 
@@ -212,20 +219,15 @@ textarea:focus {
     #cancha1-responsive {
         background-color: var(--main-clr6);
         display: inline-block;
-        padding: 20px 30px;
+        padding: 1rem 1rem;
         border-radius: 10px;
     }
 
-    #cancha1-responsive a{
+    #cancha1-responsive a {
         text-decoration: none;
         color: var(--main-clr2);
-        font-size: 20px;
+        font-size: 1rem;
         letter-spacing: 1px;
-    }
-
-    main {
-        height: 100vh;
-        background-color: #fff;
     }
 
     #cancha2-reserva-responsive {
@@ -237,5 +239,12 @@ textarea:focus {
         border-top: 1px solid #c0b8b8;
         border-bottom: 1px solid #c0b8b8;
     }
-    
+
+    .canchas-responsive {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
