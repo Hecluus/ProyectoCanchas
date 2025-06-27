@@ -213,51 +213,6 @@
                 </div>
             </div>
         </section>
-        <!-- Seccion Modal Login -->
-        <section>
-            <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 class="modal-title fs-5" id="staticBackdropLabel text-center">Iniciar Sesión</h2>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label"> Nombre de Usuario o
-                                        Correo</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Recordar</label>
-                                </div>
-                                <a class="recuperar" href=".//registro.html">¿No tienes cuenta?</a>
-                                <a class="recuperar" href="./404Page.html">¿Olvidaste la contraseña?</a>
-                                <!-- Botones de Facebook y Google-->
-                                <div class="botones-login">
-                                    <a href="./404Page.html"><button type="button" class="btn btn-primary botn"><i
-                                                class="bi bi-facebook"></i></button></a>
-                                    <a href="./404Page.html"><button type="button" class="btn btn-primary botn"><i
-                                                class="bi bi-google"></i></button></a>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <a href="./404Page.html"><button type="button" class="btn btn-primary"
-                                    data-bs-dismiss=" cont">Iniciar Sesión</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="seccion-comentarios-contenedor">
             <article class="post-comentario rounded-4">
                 <div class="usuario-contenedor d-flex justify-content-between w-100">
@@ -327,7 +282,7 @@
         <section id="reserva-responsive-section">
             <h2 class="text-center p-2 fs-2 text-success">Realiza tu reserva</h2>
             <div class="shadow-lg py-3">
-                <article class="d-flex gap-2 justify-content-center" id="reserva-dias">
+                <article class="d-flex gap-1 justify-content-center" id="reserva-dias">
                     <button class="">
                         <span>LUN</span>
                         <span>30</span>
@@ -393,8 +348,8 @@
                 </div>
             </div>
             <article>
-                <h3 class="p-2 mt-4 text-success">Selecciona la cancha</h3>
-                <div class="p-3" id="cancha1-reserva-responsive">
+                <h3 class="p-2 mt-4 text-success text-center">Selecciona la cancha</h3>
+                <div class="canchas-responsive p-3" id="cancha1-reserva-responsive">
                     <h3>Cancha 1</h3>
                     <div id="cancha1-responsive">
                         <a href="../Pages/404Page.html" class="d-flex flex-column">
@@ -403,7 +358,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="p-3" id="cancha2-reserva-responsive">
+                <div class="canchas-responsive p-3" id="cancha2-reserva-responsive">
                     <h3>Cancha 2</h3>
                     <div id="cancha1-responsive">
                         <a href="../Pages/404Page.html" class="d-flex flex-column">
@@ -414,12 +369,57 @@
                 </div>
             </article>
         </section>
+        <!-- Seccion Modal Login -->
+        <section>
+            <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title fs-5" id="staticBackdropLabel text-center">Iniciar Sesión</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label"> Nombre de Usuario o
+                                        Correo</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Recordar</label>
+                                </div>
+                                <a class="recuperar" href=".//registro.html">¿No tienes cuenta?</a>
+                                <a class="recuperar" href="./404Page.html">¿Olvidaste la contraseña?</a>
+                                <!-- Botones de Facebook y Google-->
+                                <div class="botones-login">
+                                    <a href="./404Page.html"><button type="button" class="btn btn-primary botn"><i
+                                                class="bi bi-facebook"></i></button></a>
+                                    <a href="./404Page.html"><button type="button" class="btn btn-primary botn"><i
+                                                class="bi bi-google"></i></button></a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="./404Page.html"><button type="button" class="btn btn-primary"
+                                    data-bs-dismiss=" cont">Iniciar Sesión</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
 
     <!-- ==========================
-             Pie de Página / Footer
+    Pie de Página / Footer
     ========================== -->
     <footer class="bg-dark text-white">
         <div class="pie-pag">
@@ -460,7 +460,7 @@
     </footer>
 
     <!-- ==========================
-             Scripts de Bootstrap
+    Scripts de Bootstrap
     ========================== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
