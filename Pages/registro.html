@@ -15,30 +15,52 @@
         <section class="d-flex justify-content-center">
             <form action="" class="rounded-4 m-5 p-4 text-center shadow-lg">
                 <h1 class="mb-3"><b>Crea una cuenta</b></h1>
+
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="nombre" placeholder="nombre@example.com" required>
-                    <label for="nombre">Nombre de usuario</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido" required>
+                    <label for="nombre">Nombre y Apellido</label>
                 </div>
+
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="correo" placeholder="Correo Electonico" required>
-                    <label for="correo">Correo Electronico</label>
+                    <input type="text" class="form-control" id="usuario" placeholder="Nombre de Usuario" required>
+                    <label for="usuario">Nombre de Usuario</label>
                 </div>
+
                 <div class="form-floating mb-3">
-                    <input type="tel" class="form-control" id="celular" placeholder="Celular">
-                    <label for="celular">Numero de Celular</label>
+                    <input type="email" class="form-control" id="correo" placeholder="Correo Electrónico" required>
+                    <label for="correo">Correo Electrónico</label>
                 </div>
+
                 <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
+                    <input type="tel" class="form-control" id="celular" placeholder="Teléfono">
+                    <label for="celular">Teléfono</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="domicilio" placeholder="Domicilio">
+                    <label for="domicilio">Domicilio</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="cp" placeholder="Código Postal">
+                    <label for="cp">Código Postal</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="contraseña" placeholder="Contraseña" required>
                     <label for="contraseña">Contraseña</label>
                 </div>
+
                 <div class="text-start">
-                    <input type="checkbox" name="" id="tyc" required>
-                    <label for="tyc"><b>Aceptar los <a href="./404Page.html" class="text-black">Terminos y
-                                Condiciones</b></a></label>
+                    <input type="checkbox" class="form-check-input" id="tyc" required>
+                    <label for="tyc"><b>Aceptar los <a href="./404Page.html" class="text-black">Términos y
+                                Condiciones</a></b></label>
                 </div>
-                <button type="submit" id="registrar"><b>Registrar</b></button>
+
+                <a href="./404Page.html"><button type="button" id="registrar"><b>Registrar</b></button></a>
             </form>
         </section>
+
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"

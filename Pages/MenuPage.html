@@ -24,7 +24,8 @@
                 <a href="./sobrenosotrospage.html" class="nav-links">Sobre Nosotros</a>
             </nav>
             <div class="login-btns">
-                <a href="./login.html" class="btn btn-primary btn-login">Iniciar Sesión</a>
+                <button class="btn btn-primary btn-login" data-bs-toggle="modal" data-bs-target="#login">Iniciar
+                    Sesión</button>
                 <a href="./registro.html" class="btn btn-primary btn-login">Registrar</a>
             </div>
         </section>
@@ -285,6 +286,51 @@
                 </div>
             </div>
         </section>
+        <!-- Seccion Modal Login -->
+        <section>
+            <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title fs-5" id="staticBackdropLabel text-center">Iniciar Sesión</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label"> Nombre de Usuario o
+                                        Correo</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Recordar</label>
+                                </div>
+                                <a class="recuperar" href=".//registro.html">¿No tienes cuenta?</a>
+                                <a class="recuperar" href="./404Page.html">¿Olvidaste la contraseña?</a>
+                                <!-- Botones de Facebook y Google-->
+                                <div class="botones-login">
+                                    <a href="./404Page.html"><button type="button" class="btn btn-primary botn"><i
+                                                class="bi bi-facebook"></i></button></a>
+                                    <a href="./404Page.html"><button type="button" class="btn btn-primary botn"><i
+                                                class="bi bi-google"></i></button></a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="./404Page.html"><button type="button" class="btn btn-primary"
+                                    data-bs-dismiss=" cont">Iniciar Sesión</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="bg-dark text-white">
         <div class="pie-pag">
@@ -310,9 +356,9 @@
             <section class="redes text-center">
                 <h2>Redes Sociales</h2>
                 <nav id="nav-footer">
-                    <a href="#" class="text-white fs-4 me-3"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="text-white fs-4 me-3"><i class="bi bi-whatsapp"></i></a>
-                    <a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
+                    <a href="./404Page.html" class="text-white fs-4 me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="./404Page.html" class="text-white fs-4 me-3"><i class="bi bi-whatsapp"></i></a>
+                    <a href="./404Page.html" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
                 </nav>
                 <div id="logo-footer">
                     <img src="../Assets/img/logo.png" alt="logo" class="logo" style="max-height: 50px;">
