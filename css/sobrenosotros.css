@@ -53,9 +53,10 @@ main {
    Contenedor de integrantes
 ========================== */
 .contenedor2 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    padding: 1rem;
 }
 
 /* ==========================
@@ -66,8 +67,12 @@ main {
 .integrante3,
 .integrante4 {
     display: flex;
-    justify-content: space-between;
     place-items: center;
+    flex-direction: column;
+}
+
+.integrante3,.integrante4 {
+    justify-content: end;
 }
 
 /* ==========================
@@ -79,6 +84,8 @@ main {
 .imgequipo4 {
     max-width: 150px;
     animation-name: fadeIn;
+    border-radius: 5rem;
+    background-color: var(--main-clr6);
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
@@ -162,10 +169,12 @@ main {
     }
 
     .contenedornosotros {
-        display: block;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
     .contenedor2{
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
 

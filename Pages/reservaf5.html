@@ -26,6 +26,10 @@
                 <a href="./MenuPage.html" class="nav-links">Comida</a>
                 <a href="./contactopage.html" class="nav-links">Contacto</a>
                 <a href="./sobrenosotrospage.html" class="nav-links">Sobre Nosotros</a>
+                <form class="d-flex form-buscador" role="search">
+                    <input class="form-control me-2 buscador" type="search" placeholder="Buscar" aria-label="Buscar" />
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
             </nav>
             <div class="login-btns">
                 <button class="btn btn-primary btn-login" data-bs-toggle="modal" data-bs-target="#login">Iniciar
@@ -79,17 +83,19 @@
 
                     <div class="row">
                         <div class="col grid-item col-md-1 bg-black border-start-0"><b>cancha 1</b></div>
-                        <div class="col grid-item col-vacia dropdown" data-bs-toggle="dropdown">
+                        <div class="col grid-item col-vacia dropdown">
+                            <button class="w-100 h-100 border-0 bg-transparent" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"></button>
                             <div class="dropdown-menu bg-light">
                                 <div class="d-flex flex-column align-items-center">
                                     <div class="d-flex flex-flow-wrap mt-3 border-bottom border-black p-1 info-dd-1">
                                         <div class="mx-4">
-                                            <img src="./assets/img/cancha-de-futbol.png" alt="" width="30px"
+                                            <img src="../Assets/img/cancha-de-futbol.png" alt="" width="30px"
                                                 height="30px">
                                             <span class="dpdn-span"><b>Cancha 1</b></span>
                                         </div>
                                         <div class="mx-5">
-                                            <img src="./assets/img/reloj.png" alt="" width="30px" height="30px">
+                                            <img src="../Assets/img/reloj.png" alt="" width="30px" height="30px">
                                             <span class="dpdn-span"><b>11:00</b></span>
                                         </div>
                                     </div>
@@ -99,7 +105,7 @@
                                             <span class="mx-5">60 min</span>
                                         </div>
                                     </div>
-                                    <button type="button" class="m-2 btn-reserva">Reserva</button>
+                                    <a href="./404Page.html"><button type="button" class="m-2 btn-reserva">Reserva</button></a>
                                 </div>
                             </div>
                         </div>
@@ -125,17 +131,19 @@
 
                     <div class="row">
                         <div class="col grid-item col-md-1 bg-black border-start-0"><b>cancha 2</b></div>
-                        <div class="col grid-item col-vacia dropdown" data-bs-toggle="dropdown">
+                        <div class="col grid-item col-vacia dropdown">
+                            <button class="w-100 h-100 border-0 bg-transparent" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"></button>
                             <div class="dropdown-menu bg-light">
                                 <div class="d-flex flex-column align-items-center">
                                     <div class="d-flex flex-flow-wrap mt-3 border-bottom border-black p-1 info-dd-1">
                                         <div class="mx-4">
-                                            <img src="./assets/img/cancha-de-futbol.png" alt="" width="30px"
+                                            <img src="../Assets/img/cancha-de-futbol.png" alt="" width="30px"
                                                 height="30px">
                                             <span class="dpdn-span"><b>Cancha 2</b></span>
                                         </div>
                                         <div class="mx-5">
-                                            <img src="./assets/img/reloj.png" alt="" width="30px" height="30px">
+                                            <img src="../Assets/img/reloj.png" alt="" width="30px" height="30px">
                                             <span class="dpdn-span"><b>11:00</b></span>
                                         </div>
                                     </div>
@@ -145,7 +153,7 @@
                                             <span class="mx-5">60 min</span>
                                         </div>
                                     </div>
-                                    <button type="button" class="m-2 btn-reserva">Reserva</button>
+                                    <a href="./404Page.html"><button type="button" class="m-2 btn-reserva" role="button">Reserva</button></a>
                                 </div>
                             </div>
                         </div>
@@ -171,17 +179,19 @@
 
                     <div class="row">
                         <div class="col grid-item col-md-1 bg-black border-start-0"><b>cancha 3</b></div>
-                        <div class="col grid-item col-vacia dropdown" data-bs-toggle="dropdown">
+                        <div class="col grid-item col-vacia dropdown">
+                            <button class="w-100 h-100 border-0 bg-transparent" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"></button>
                             <div class="dropdown-menu bg-light">
                                 <div class="d-flex flex-column align-items-center">
                                     <div class="d-flex flex-flow-wrap mt-3 border-bottom border-black p-1 info-dd-1">
                                         <div class="mx-4">
-                                            <img src="./assets/img/cancha-de-futbol.png" alt="" width="30px"
+                                            <img src="../Assets/img/cancha-de-futbol.png" alt="" width="30px"
                                                 height="30px">
                                             <span class="dpdn-span"><b>Cancha 3</b></span>
                                         </div>
                                         <div class="mx-5">
-                                            <img src="./assets/img/reloj.png" alt="" width="30px" height="30px">
+                                            <img src="../Assets/img/reloj.png" alt="" width="30px" height="30px">
                                             <span class="dpdn-span"><b>11:00</b></span>
                                         </div>
                                     </div>
@@ -191,7 +201,7 @@
                                             <span class="mx-5">60 min</span>
                                         </div>
                                     </div>
-                                    <button type="button" class="m-2 btn-reserva" role="button">Reserva</button>
+                                    <a href="./404Page.html"><button type="button" class="m-2 btn-reserva" role="button">Reserva</button></a>
                                 </div>
                             </div>
                         </div>
@@ -214,6 +224,7 @@
             </div>
         </section>
         <section class="seccion-comentarios-contenedor">
+            <h2 class="text-center">Comentarios</h2>
             <article class="post-comentario rounded-4">
                 <div class="usuario-contenedor d-flex justify-content-between w-100">
                     <div class="usuario-comentario d-flex p-3">
