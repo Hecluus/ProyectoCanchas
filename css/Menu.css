@@ -14,11 +14,12 @@ main {
 .subti {
     display: grid;
     place-items: center;
-    height: 20vh;
+    height: 25vh;
     background-image: url(../Assets/img/imagecomida.jpg);
     width: 100%;
     background-position: center;
     background-size: cover;
+    background-position-y: -86%;
 }
 
 .subti h2 {
@@ -298,7 +299,11 @@ textarea:focus {
     }
 
     .subti {
-        width: auto;
+        height: 100px;
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        background-position: center;
     }
 
     .precio {
