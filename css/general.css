@@ -68,6 +68,10 @@ header {
     text-shadow: 0 12px 10px var(--main-clr7);
 }
 
+.buscador {
+    width: 150px;
+}
+
 
 /* ==========================
 Botones login
@@ -203,6 +207,11 @@ footer {
 ========================== */
     header {
         height: 60vh;
+    }
+
+    .form-buscador {
+        display: flex;
+        flex-direction: column;
     }
 
     .nav-contenedor {

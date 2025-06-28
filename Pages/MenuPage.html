@@ -23,6 +23,10 @@
                 <a href="#" class="nav-links">Comida</a>
                 <a href="./contactopage.html" class="nav-links">Contacto</a>
                 <a href="./sobrenosotrospage.html" class="nav-links">Sobre Nosotros</a>
+                <form class="d-flex form-buscador" role="search">
+                    <input class="form-control me-2 buscador" type="search" placeholder="Buscar" aria-label="Buscar" />
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
             </nav>
             <div class="login-btns">
                 <button class="btn btn-primary btn-login" data-bs-toggle="modal" data-bs-target="#login">Iniciar
@@ -257,6 +261,75 @@
                 </ul>
             </div>
         </section>
+
+        <section class="seccion-comentarios-contenedor">
+            <h2 class="text-center">Comentarios</h2>
+            <article class="post-comentario rounded-4">
+                <div class="usuario-contenedor d-flex justify-content-between w-100">
+                    <div class="usuario-comentario d-flex p-3">
+                        <img class="imagen-usuario-comentario" src="../Assets/img/fotoPerfil3.jpeg"
+                            alt="foto de perfil">
+                        <div class="usuario-datos">
+                            <span class="nombre-perfil-comentario"><b>Juan Rodriguez</b></span>
+                            <br>
+                            <span class="dia">hace 22 dias</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comentario">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam cumque blanditiis saepe nostrum
+                    necessitatibus aspernatur distinctio nulla amet cupiditate dignissimos, voluptate esse ex fuga, quas
+                    reiciendis quisquam. Cupiditate, eum nesciunt!
+                </div>
+            </article>
+            <article class="post-comentario rounded-4">
+                <div class="usuario-contenedor d-flex justify-content-between w-100">
+                    <div class="usuario-comentario d-flex p-3">
+                        <img class="imagen-usuario-comentario" src="../Assets/img/fotoPerfil2.jpeg"
+                            alt="foto de perfil">
+                        <div class="usuario-datos">
+                            <span class="nombre-perfil-comentario"><b>Roberto</b></span>
+                            <br>
+                            <span class="dia">hace 15 dias</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comentario">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam cumque blanditiis saepe nostrum
+                    necessitatibus aspernatur distinctio nulla amet cupiditate dignissimos, voluptate esse ex fuga, quas
+                    reiciendis quisquam. Cupiditate, eum nesciunt!
+                </div>
+            </article>
+            <article class="post-comentario rounded-4">
+                <div class="usuario-contenedor d-flex justify-content-between w-100">
+                    <div class="usuario-comentario d-flex p-3">
+                        <img class="imagen-usuario-comentario" src="../Assets/img/fotoPerfil1.jpeg"
+                            alt="foto de perfil">
+                        <div class="usuario-datos">
+                            <span class="nombre-perfil-comentario"><b>Pepe</b></span>
+                            <br>
+                            <span class="dia">hace 10 dias</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comentario">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam cumque blanditiis saepe nostrum
+                    necessitatibus aspernatur distinctio nulla amet cupiditate dignissimos, voluptate esse ex fuga, quas
+                    reiciendis quisquam. Cupiditate, eum nesciunt!
+                </div>
+            </article>
+            <form action="" class="mb-3 p-3 bg-light rounded-1">
+                <div class="usuario-redactor d-flex">
+                    <img id="foto-redactor" src="../Assets/img/fotoPerfil1.jpeg" alt="">
+                    <div class="nombre-redactor"><b>Tú</b></div>
+                </div>
+                <textarea name="comentario-redactor" id="textarea" placeholder="Escribe un comentario"></textarea>
+                <label for="textarea">
+                    <button type="button" id="enviar-comentario">Comentar</button>
+                </label>
+            </form>
+        </section>
+
         <!-- Seccion Modal -->
         <section>
             <section class="fixed-bottom">
