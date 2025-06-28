@@ -14,14 +14,21 @@ main {
 .subti {
     display: grid;
     place-items: center;
-    height: 15vh;
+    height: 25vh;
+    background-image: url(../Assets/img/imagecomida.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-position-y: -86%;
 }
 
 .subti h2 {
     font-size: 2.5rem;
     text-align: center;
-    color: white;
-    border-bottom: 1px solid var(--main-clr3);
+    color:  #fff;
+    font-size: 50px;
+    border-bottom: 3px solid var(--main-clr5);
+    
 }
 
 /* ==========================
@@ -292,7 +299,11 @@ textarea:focus {
     }
 
     .subti {
-        width: auto;
+        height: 100px;
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        background-position: center;
     }
 
     .precio {

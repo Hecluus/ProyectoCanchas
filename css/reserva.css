@@ -6,6 +6,12 @@ body {
     background-color: var(--main-clr5);
 }
 
+h1 {
+    background-image: url(../Assets/img/imagecf55.jpg);
+    background-position: center;
+    padding: 50px;
+}
+
 /* ==========================
    Estilos de la cuadrilla
 ========================== */
